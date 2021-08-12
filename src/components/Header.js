@@ -63,7 +63,6 @@ const NavMenu = styled.div`
 
     :hover {
       border-bottom: 2px solid #fff;
-      transform-origin: left;
     }
   }
 `;

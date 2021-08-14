@@ -7,6 +7,8 @@ function Home() {
 
 const Container = styled.div`
   display: flex;
+  height: 100vh;
+  background-color: #18181b;
 `;
 
 export default Home;

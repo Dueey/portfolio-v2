@@ -6,10 +6,12 @@ function Header() {
   return (
     <Nav>
       <NavMenu>
-        <a href='/'>
-          <Home className='icon' />
-          <span>HOME</span>
-        </a>
+        <div>
+          <a href='/'>
+            <Home className='icon' />
+            <span>HOME</span>
+          </a>
+        </div>
         <a href='/about'>
           <Person className='icon' />
           <span>ABOUT ME</span>
@@ -28,23 +30,45 @@ function Header() {
 }
 
 const Nav = styled.div`
-  background-color: #090b13;
+  background: #29292c;
+  /* background-color: #090b13; */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 51px;
 `;
 
 const NavMenu = styled.div`
   display: flex;
 
   a {
+    position: relative;
     text-decoration: none;
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 15px 10px 15px 0px;
+    border: 1px solid transparent;
+    width: 180px;
+    justify-content: center;
+    background: #29292c;
+    margin-top: -2px;
+
+    :hover {
+      top: 1px;
+      z-index: 2;
+      color: #30e389;
+      border: 1px solid #30e389;
+    }
   }
+
+  /* a:nth-child(1) {
+    border-left: 2px solid white;
+  }
+
+  a:nth-child(4) {
+    border-right: 2px solid white;
+  } */
 
   .icon {
     margin-bottom: -3px;
@@ -59,10 +83,10 @@ const NavMenu = styled.div`
     margin-bottom: -9px;
     border-bottom: 2px solid transparent;
     border-radius: 0px 0px 2px 2px;
-    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    /* transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s; */
 
     :hover {
-      border-bottom: 2px solid #fff;
+      /* border-bottom: 2px solid #fff; */
     }
   }
 `;

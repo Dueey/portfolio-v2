@@ -2,7 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 function Home() {
-  return <Container></Container>;
+  return (
+    <Container>
+      <Wrapper>
+        <Wrap></Wrap>
+      </Wrapper>
+    </Container>
+  );
 }
 
 const Container = styled.div`
@@ -10,5 +16,9 @@ const Container = styled.div`
   height: 100vh;
   background-color: #18181b;
 `;
+
+const Wrapper = styled.div``;
+
+const Wrap = styled.div``;
 
 export default Home;

@@ -7,20 +7,20 @@ function Header() {
     <Nav>
       <NavMenu>
         <div>
-          <a href='/'>
+          <a href='/' className='home'>
             <Home className='icon' />
             <span>HOME</span>
           </a>
         </div>
-        <a href='/about'>
+        <a href='/about' className='about'>
           <Person className='icon' />
           <span>ABOUT ME</span>
         </a>
-        <a href='/projects'>
+        <a href='/projects' className='projects'>
           <Computer className='icon' />
           <span>PROJECTS</span>
         </a>
-        <a href='/contact'>
+        <a href='/contact' className='contact'>
           <Message className='icon' />
           <span>CONTACT</span>
         </a>
@@ -57,9 +57,27 @@ const NavMenu = styled.div`
     :hover {
       top: 1px;
       z-index: 2;
-      color: #30e389;
-      border: 1px solid #30e389;
     }
+  }
+
+  .home:hover {
+    color: #51d0f0;
+    border: 1px solid #51d0f0;
+  }
+
+  .about:hover {
+    color: #ed6a61;
+    border: 1px solid #ed6a61;
+  }
+
+  .projects:hover {
+    color: #30e389;
+    border: 1px solid #30e389;
+  }
+
+  .contact:hover {
+    color: #f0b851;
+    border: 1px solid #f0b851;
   }
 
   /* a:nth-child(1) {

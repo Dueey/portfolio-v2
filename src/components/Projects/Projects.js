@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import ImgSlider from "./ImgSlider";
 import {
   CropPortrait,
   Casino,
@@ -8,27 +9,80 @@ import {
 } from "@material-ui/icons";
 
 function Projects() {
+  const [hidden, setHidden] = useState("hidden");
+  const [hidden2, setHidden2] = useState("hidden");
+  const [hidden3, setHidden3] = useState("hidden");
+  const [hidden4, setHidden4] = useState("hidden");
+
+  function handleClick() {
+    if (hidden === "hidden") {
+      setHidden("active");
+      setHidden2("hidden");
+      setHidden3("hidden");
+      setHidden4("hidden");
+    } else if (hidden === "active") {
+      setHidden("hidden");
+    }
+  }
+
+  function handleClick2() {
+    if (hidden2 === "hidden") {
+      setHidden("hidden");
+      setHidden2("active");
+      setHidden3("hidden");
+      setHidden4("hidden");
+    } else if (hidden2 === "active") {
+      setHidden2("hidden");
+    }
+  }
+
+  function handleClick3() {
+    if (hidden3 === "hidden") {
+      setHidden("hidden");
+      setHidden2("hidden");
+      setHidden3("active");
+      setHidden4("hidden");
+    } else if (hidden3 === "active") {
+      setHidden3("hidden");
+    }
+  }
+
+  function handleClick4() {
+    if (hidden4 === "hidden") {
+      setHidden("hidden");
+      setHidden2("hidden");
+      setHidden3("hidden");
+      setHidden4("active");
+    } else if (hidden4 === "active") {
+      setHidden4("hidden");
+    }
+  }
+
   return (
     <Container>
+      <ImgSlider />
       <Wrapper>
         <Details>
-          <div></div>
+          <div className={hidden}></div>
+          <div className={hidden2}></div>
+          <div className={hidden3}></div>
+          <div className={hidden4}></div>
         </Details>
         <Wrap>
-          <span>
+          <span onClick={handleClick} className={hidden}>
             <CropPortrait className='icon-1' />
             <CropPortrait className='icon-2' />
             Clones
           </span>
-          <span>
+          <span onClick={handleClick2} className={hidden2}>
             <Casino className='dice' />
             Games
           </span>
-          <span>
+          <span onClick={handleClick3} className={hidden3}>
             <Storefront className='store' />
             E-Commerce
           </span>
-          <span>
+          <span onClick={handleClick4} className={hidden4}>
             <MoreHoriz className='more' />
             Misc.
           </span>
@@ -40,6 +94,7 @@ function Projects() {
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: #18181b;
 `;
@@ -53,7 +108,6 @@ const Wrap = styled.div`
   flex-direction: column;
   color: white;
   margin: 50px;
-  /* margin-right: 0px; */
   z-index: 2;
 
   span {
@@ -70,14 +124,24 @@ const Wrap = styled.div`
     transition: 0.1s ease-in;
 
     :hover {
-      width: 220px;
-      border-right: 1px solid #29292c;
+      /* width: 220px; */
+      /* border-right: 1px solid #29292c; */
+      color: #30e389;
     }
+  }
 
-    ::active {
-      width: 220px;
-      border-right: 1px solid #29292c;
-    }
+  .active {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 220px;
+    margin: 10px 0px 0px 20px;
+    letter-spacing: 1.5px;
+    border-right: 1px solid #29292c;
+    background-color: #29292c;
+    cursor: pointer;
+    color: #30e389;
   }
 
   .icon-1 {
@@ -122,9 +186,16 @@ const Details = styled.div`
 
   div {
     height: 60vh;
+    width: 0vw;
+    background-color: transparent;
+    transition: 0.1s;
+  }
+
+  .active {
     width: 65vw;
     border: 1px solid #30e389;
     background-color: #29292c;
+    transition: 0.3s ease-in;
   }
 `;
 

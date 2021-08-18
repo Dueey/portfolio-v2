@@ -125,7 +125,7 @@ const Wrap = styled.div`
 
     :hover {
       /* width: 220px; */
-      /* border-right: 1px solid #29292c; */
+      /* border-right: 1px solid transparent; */
       color: #30e389;
     }
   }
@@ -138,7 +138,7 @@ const Wrap = styled.div`
     width: 220px;
     margin: 10px 0px 0px 20px;
     letter-spacing: 1.5px;
-    border-right: 1px solid #29292c;
+    border-right: 1px solid transparent;
     background-color: #29292c;
     cursor: pointer;
     color: #30e389;

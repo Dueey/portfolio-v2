@@ -111,6 +111,11 @@ const Wrap = styled.div`
   z-index: 2;
 
   span {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     display: flex;
     justify-content: center;
     font-size: 20px;

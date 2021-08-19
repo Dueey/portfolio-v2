@@ -18,68 +18,92 @@ function ImgSlider() {
   return (
     <Carousel {...settings}>
       <Wrap>
-        <div>
-          <img
-            src='https://images-na.ssl-images-amazon.com/images/G/01/img21/events/grfww/traffic_drivers/GRFWW_GW_Desktop_MemorialDayDeals_1x-1500x600._CB661646560_.jpg'
-            alt='home_img_1'
-          />
-        </div>
+        <a
+          href='https://tetris-react-javascript.netlify.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div>
+            <img src='/images/The_Tetris_Company_logo.png' alt='' />
+          </div>
+        </a>
       </Wrap>
       <Wrap>
-        <div>
-          <img
-            src='https://images-na.ssl-images-amazon.com/images/G/01/img21/events/grfww/traffic_drivers/GRFWW_GW_Desktop_MemorialDayDeals_1x-1500x600._CB661646560_.jpg'
-            alt='home_img_1'
-          />
-        </div>
+        <a
+          href='https://pacman-javascript.netlify.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div>
+            <img src='/images/pacman.svg' alt='' />
+          </div>
+        </a>
       </Wrap>
       <Wrap>
-        <div>
-          <img
-            src='https://images-na.ssl-images-amazon.com/images/G/01/img21/events/grfww/traffic_drivers/GRFWW_GW_Desktop_MemorialDayDeals_1x-1500x600._CB661646560_.jpg'
-            alt='home_img_1'
-          />
-        </div>
+        <a
+          href='https://chess-react-javascript.netlify.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='chess'>
+            <img src='/images/chess.png' alt='' />
+          </div>
+        </a>
       </Wrap>
       <Wrap>
-        <div>
-          <img
-            src='https://images-na.ssl-images-amazon.com/images/G/01/img21/events/grfww/traffic_drivers/GRFWW_GW_Desktop_MemorialDayDeals_1x-1500x600._CB661646560_.jpg'
-            alt='home_img_1'
-          />
-        </div>
+        <a
+          href='https://tic-tac-toe-javascript-basic.netlify.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='tictactoe'>
+            <img src='/images/tictactoe.png' alt='' />
+          </div>
+        </a>
       </Wrap>
       <Wrap>
-        <div>
-          <img
-            src='https://images-na.ssl-images-amazon.com/images/G/01/img21/events/grfww/traffic_drivers/GRFWW_GW_Desktop_MemorialDayDeals_1x-1500x600._CB661646560_.jpg'
-            alt='home_img_1'
-          />
-        </div>
+        <a
+          href='https://react--clone-8f180.web.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='amazon'>
+            <img src='/images/amazon.png' alt='' />
+          </div>
+        </a>
       </Wrap>
       <Wrap>
-        <div>
-          <img
-            src='https://images-na.ssl-images-amazon.com/images/G/01/img21/events/grfww/traffic_drivers/GRFWW_GW_Desktop_MemorialDayDeals_1x-1500x600._CB661646560_.jpg'
-            alt='home_img_1'
-          />
-        </div>
+        <a
+          href='https://react-disney-clone-d5025.web.app/home'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div>
+            <img src='/images/disney.svg' alt='' />
+          </div>
+        </a>
       </Wrap>
       <Wrap>
-        <div>
-          <img
-            src='https://images-na.ssl-images-amazon.com/images/G/01/img21/events/grfww/traffic_drivers/GRFWW_GW_Desktop_MemorialDayDeals_1x-1500x600._CB661646560_.jpg'
-            alt='home_img_1'
-          />
-        </div>
+        <a
+          href='https://react-netflix-clone-e098d.web.app/browse'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='netflix'>
+            <img src='/images/netflix.png' alt='' />
+          </div>
+        </a>
       </Wrap>
       <Wrap>
-        <div>
-          <img
-            src='https://images-na.ssl-images-amazon.com/images/G/01/img21/events/grfww/traffic_drivers/GRFWW_GW_Desktop_MemorialDayDeals_1x-1500x600._CB661646560_.jpg'
-            alt='home_img_1'
-          />
-        </div>
+        <a
+          href='https://react-netflix-clone-e098d.web.app/browse'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='yelp'>
+            <img src='/images/yelp.png' alt='' />
+          </div>
+        </a>
       </Wrap>
     </Carousel>
   );
@@ -99,16 +123,54 @@ const Wrap = styled.div`
   height: 80px;
   margin: 5px;
   margin-left: 0;
+  cursor: pointer;
+  /* background-color: white; */
 
   div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 5px;
+    margin-top: 1px;
+    border: 3px solid rgba(249, 249, 249, 0.1);
+    border-radius: 10px;
+    background-color: #29292c;
 
     img {
-      border-radius: 4px;
-
+      height: 75px;
       width: 100%;
-      overflow: hidden;
+      object-fit: contain;
+      transform: scale(0.8);
     }
+  }
+
+  .chess {
+    img {
+      transform: scale(1.01);
+    }
+  }
+
+  .tictactoe {
+    img {
+      transform: scale(1.4);
+      filter: invert(1);
+    }
+  }
+
+  .netflix {
+    img {
+      transform: scale(1.2);
+    }
+  }
+
+  .yelp {
+    img {
+      filter: brightness(1.2);
+    }
+  }
+
+  :hover {
+    filter: brightness(1.1);
   }
 `;
 

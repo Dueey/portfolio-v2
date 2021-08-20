@@ -11,7 +11,7 @@ function ImgSlider() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 15000,
   };
 
@@ -105,6 +105,48 @@ function ImgSlider() {
           </div>
         </a>
       </Wrap>
+
+      <Wrap>
+        <a
+          href='https://travel-website-react-javascript.netlify.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='travel'>
+            <img src='/images/travel.png' alt='' />
+          </div>
+        </a>
+      </Wrap>
+      <Wrap>
+        <a
+          href='https://e-commerce-react-javascript.netlify.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='ecommerce'>
+            <img src='/images/commerce.png' alt='' />
+          </div>
+        </a>
+      </Wrap>
+      <Wrap>
+        <a
+          href='https://discord.com/oauth2/authorize?client_id=827787615948242985&scope=bot&permissions=0'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='discord'>
+            <img src='/images/discord1.png' alt='' />
+            <img src='/images/discord.png' alt='' />
+          </div>
+        </a>
+      </Wrap>
+      <Wrap>
+        <a href='' target='_blank' rel='noopener noreferrer'>
+          <div className=''>
+            <img src='/images/spotify.png' alt='' />
+          </div>
+        </a>
+      </Wrap>
     </Carousel>
   );
 }
@@ -166,6 +208,17 @@ const Wrap = styled.div`
   .yelp {
     img {
       filter: brightness(1.2);
+    }
+  }
+
+  .travel {
+    img {
+      transform: scale(0.9);
+    }
+  }
+
+  .discord {
+    img {
     }
   }
 

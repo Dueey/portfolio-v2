@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
+import Cards from "./Cards";
 import {
   CropPortrait,
   Casino,
@@ -63,7 +64,9 @@ function Projects() {
       <ImgSlider />
       <Wrapper>
         <Details>
-          <div className={hidden}></div>
+          <div className={hidden}>
+            <Cards />
+          </div>
           <div className={hidden2}></div>
           <div className={hidden3}></div>
           <div className={hidden4}></div>

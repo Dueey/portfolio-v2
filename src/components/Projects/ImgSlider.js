@@ -141,7 +141,11 @@ function ImgSlider() {
         </a>
       </Wrap>
       <Wrap>
-        <a href='' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://e-commerce-react-javascript.netlify.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <div className=''>
             <img src='/images/spotify.png' alt='' />
           </div>

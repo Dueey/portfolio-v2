@@ -65,11 +65,29 @@ function Projects() {
       <Wrapper>
         <Details>
           <div className={hidden}>
-            <Cards />
+            <Card state={hidden} />
+            <Card state={hidden} />
+            <Card state={hidden} />
+            <Card state={hidden} />
           </div>
-          <div className={hidden2}></div>
-          <div className={hidden3}></div>
-          <div className={hidden4}></div>
+          <div className={hidden2}>
+            <Card state={hidden2} />
+            <Card state={hidden2} />
+            <Card state={hidden2} />
+            <Card state={hidden2} />
+          </div>
+          <div className={hidden3}>
+            <Card state={hidden3} />
+            <Card state={hidden3} />
+            <Card state={hidden3} />
+            <Card state={hidden3} />
+          </div>
+          <div className={hidden4}>
+            <Card state={hidden4} />
+            <Card state={hidden4} />
+            <Card state={hidden4} />
+            <Card state={hidden4} />
+          </div>
         </Details>
         <Wrap>
           <span onClick={handleClick} className={hidden}>
@@ -191,11 +209,13 @@ const Details = styled.div`
   position: absolute;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 
   div {
+    display: flex;
+    flex-wrap: wrap;
     height: 60vh;
     width: 0vw;
-    background-color: transparent;
     transition: 0.1s;
   }
 
@@ -205,6 +225,12 @@ const Details = styled.div`
     background-color: #29292c;
     transition: 0.3s ease-in;
   }
+
+  .hidden {
+    overflow: hidden;
+  }
 `;
+
+const Card = styled(Cards)``;
 
 export default Projects;

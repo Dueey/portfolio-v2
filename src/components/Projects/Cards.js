@@ -11,8 +11,8 @@ function Cards(state) {
         <span>Tetris</span>
       </Wrap>
       <Wrap>
-        <img src='/images/tetris.png' alt='' />
-        <span>Tetris</span>
+        <img className='pacman' src='/images/pacman.jpg' alt='' />
+        <span>Pacman</span>
       </Wrap>
     </Container>
   );
@@ -34,10 +34,18 @@ const Wrap = styled.div`
   min-width: 200px;
   cursor: pointer;
   background-color: grey;
+  overflow: hidden;
 
   img {
     object-fit: contain;
     width: 200px;
+  }
+
+  .pacman {
+    object-fit: contain;
+    width: 200px;
+    transform: scale(1.01);
+    margin-top: -80px;
   }
 
   span {

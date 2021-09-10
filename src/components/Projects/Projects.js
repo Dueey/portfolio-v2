@@ -69,29 +69,37 @@ function Projects() {
               state={hidden}
               image1='/images/amazon-clone.png'
               class1='Amazon'
-              image2='/images/disney+.png'
-              class2='Speed-Typing'
+              image2=''
+              class2=''
+              class3='na'
+              link1='https://react--clone-8f180.web.app/'
             />
             <Card
               state={hidden}
               image1='/images/disney+.png'
-              class1='Disney+'
-              image2='/images/pacman.jpg'
+              class1='Disney'
+              image2=''
               class2=''
+              class3='na'
+              link1='https://react-disney-clone-d5025.web.app/'
             />
             <Card
               state={hidden}
-              image1='/images/chess1.png'
+              image1='/images/netflix-clone.png'
               class1='Netflix'
-              image2='/images/pacman.jpg'
+              image2=''
               class2=''
+              class3='na'
+              link1='https://react-netflix-clone-e098d.web.app/'
             />
             <Card
               state={hidden}
-              image1='/images/tic_tac_toe.png'
-              class1='Yelp'
-              image2='/images/pacman.jpg'
+              image1='/images/yelp-clone.png'
+              class1='Yelp-WIP'
+              image2=''
               class2=''
+              class3='na'
+              link1=''
             />
           </div>
           <div className={hidden2}>
@@ -101,87 +109,90 @@ function Projects() {
               class1='Tetris'
               image2='/images/speedtyping.png'
               class2='Speed-Typing'
+              link1='https://tetris-react-javascript.netlify.app/'
+              link2='https://speed-typing-javascript.netlify.app/'
             />
             <Card
               state={hidden}
               image1='/images/pacman.jpg'
               class1='Pacman'
-              image2='/images/pacman.jpg'
-              class2='na'
+              image2=''
+              class2=''
+              class3='na'
+              link1='https://pacman-javascript.netlify.app/'
             />
             <Card
               state={hidden}
               image1='/images/chess1.png'
               class1='Chess'
-              image2='/images/pacman.jpg'
-              class2='na'
+              image2=''
+              class2=''
+              class3='na'
+              link1='https://chess-react-javascript.netlify.app/'
             />
             <Card
               state={hidden}
               image1='/images/tic_tac_toe.png'
               class1='Tic-Tac-Toe'
-              image2='/images/pacman.jpg'
-              class2='na'
+              image2=''
+              class2=''
+              class3='na'
+              link1='https://tic-tac-toe-javascript-basic.netlify.app/'
             />
           </div>
           <div className={hidden3}>
             <Card
-              state={hidden3}
-              image1='/images/tetris.png'
-              class1=''
-              image2='/images/pacman.jpg'
+              state={hidden}
+              image1='/images/amazon-clone.png'
+              class1='Amazon'
+              image2=''
               class2=''
+              class3='na'
+              link1='https://react--clone-8f180.web.app/'
             />
             <Card
               state={hidden3}
-              image1='/images/tetris.png'
-              class1=''
-              image2='/images/pacman.jpg'
+              image1='/images/store.png'
+              class1='E-Commerce'
+              image2=''
               class2=''
-            />
-            <Card
-              state={hidden3}
-              image1='/images/tetris.png'
-              class1=''
-              image2='/images/pacman.jpg'
-              class2=''
-            />
-            <Card
-              state={hidden3}
-              image1='/images/tetris.png'
-              class1=''
-              image2='/images/pacman.jpg'
-              class2=''
+              class3='na'
+              link1='https://e-commerce-react-javascript.netlify.app/'
             />
           </div>
           <div className={hidden4}>
             <Card
               state={hidden4}
               image1='/images/tetris.png'
-              class1=''
-              image2='/images/pacman.jpg'
-              class2=''
+              class1='Travel'
+              image2='/images/tetris.png'
+              class2='Python-Music'
+              link1='https://react-disney-clone-d5025.web.app/'
             />
             <Card
               state={hidden4}
               image1='/images/tetris.png'
-              class1=''
-              image2='/images/pacman.jpg'
-              class2=''
+              class1='Discord-Music-Bot'
+              image2='/images/tetris.png'
+              class2='Calculator'
+              link1='https://react-disney-clone-d5025.web.app/'
             />
             <Card
               state={hidden4}
               image1='/images/tetris.png'
-              class1=''
-              image2='/images/pacman.jpg'
-              class2=''
+              class1='Chat-App'
+              image2='/images/tetris.png'
+              class2='Task-Tracker'
+              link1='https://react-disney-clone-d5025.web.app/'
             />
             <Card
               state={hidden4}
               image1='/images/tetris.png'
-              class1=''
-              image2='/images/pacman.jpg'
+              class1='Spotify'
+              image2=''
               class2=''
+              class3='na'
+              link1='https://react-disney-clone-d5025.web.app/'
             />
           </div>
         </Details>

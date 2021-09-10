@@ -6,11 +6,16 @@ function Cards(props) {
 
   return (
     <Container>
-      <Wrap>
+      <Wrap href={props.link1} target='_blank' rel='noopener noreferrer'>
         <img className={props.class1} src={props.image1} alt='' />
         <span>{props.class1}</span>
       </Wrap>
-      <Wrap>
+      <Wrap
+        href={props.link2}
+        target='_blank'
+        rel='noopener noreferrer'
+        className={props.class3}
+      >
         <img className={props.class2} src={props.image2} alt='' />
         <span>{props.class2}</span>
       </Wrap>
@@ -22,9 +27,13 @@ const Container = styled.div`
   margin-top: 30px;
   margin-left: 60px;
   margin-right: 250px;
+
+  .na {
+    display: none;
+  }
 `;
 
-const Wrap = styled.div`
+const Wrap = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,17 +44,49 @@ const Wrap = styled.div`
   cursor: pointer;
   background-color: grey;
   overflow: hidden;
+  text-decoration: none;
 
   img {
     object-fit: contain;
     width: 200px;
   }
 
+  /* Clones */
+  .Amazon {
+    transform: scale(1.1);
+    margin-top: 7px;
+    margin-bottom: 8px;
+  }
+
+  .Disney {
+    transform: scale(1.15);
+    margin-top: 10px;
+    margin-bottom: 11px;
+  }
+
+  .Netflix {
+    transform: scale(1.3);
+    margin-top: 15px;
+    margin-bottom: 22px;
+  }
+
+  .Yelp-WIP {
+    transform: scale(1.3);
+    margin-top: 13px;
+    margin-bottom: 22px;
+  }
+
+  /* Games */
   .Pacman {
     object-fit: contain;
     width: 200px;
     transform: scale(1.01);
     margin-top: -84px;
+  }
+
+  .Chess {
+    transform: scale(1.05);
+    margin-bottom: 3px;
   }
 
   .Tic-Tac-Toe {
@@ -54,13 +95,19 @@ const Wrap = styled.div`
     max-height: 180px;
     transform: scale(1.11);
     margin-top: -8px;
-
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .Speed-Typing {
     transform: scale(1.11);
     margin-bottom: 10px;
+  }
+
+  /* E-Commerce */
+  .E-Commerce {
+    transform: scale(1.35);
+    margin-top: 21px;
+    margin-bottom: 24px;
   }
 
   span {

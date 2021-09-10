@@ -110,6 +110,31 @@ const Wrap = styled.a`
     margin-bottom: 24px;
   }
 
+  /* Misc */
+  .Travel {
+    transform: scale(1.3);
+    margin-top: 21px;
+    margin-bottom: 20px;
+  }
+
+  .Discord-Music-Bot {
+    transform: scale(1.38);
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .Calculator {
+    transform: scale(1.3);
+    margin-top: 20px;
+    margin-bottom: 22px;
+  }
+
+  .Task-Tracker {
+    transform: scale(1.2);
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
   span {
     padding: 5px;
     color: white;

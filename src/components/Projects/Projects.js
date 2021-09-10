@@ -65,28 +65,124 @@ function Projects() {
       <Wrapper>
         <Details>
           <div className={hidden}>
-            <Card state={hidden} />
-            <Card state={hidden} />
-            <Card state={hidden} />
-            <Card state={hidden} />
+            <Card
+              state={hidden}
+              image1='/images/amazon-clone.png'
+              class1='Amazon'
+              image2='/images/disney+.png'
+              class2='Speed-Typing'
+            />
+            <Card
+              state={hidden}
+              image1='/images/disney+.png'
+              class1='Disney+'
+              image2='/images/pacman.jpg'
+              class2=''
+            />
+            <Card
+              state={hidden}
+              image1='/images/chess1.png'
+              class1='Netflix'
+              image2='/images/pacman.jpg'
+              class2=''
+            />
+            <Card
+              state={hidden}
+              image1='/images/tic_tac_toe.png'
+              class1='Yelp'
+              image2='/images/pacman.jpg'
+              class2=''
+            />
           </div>
           <div className={hidden2}>
-            <Card state={hidden2} />
-            <Card state={hidden2} />
-            <Card state={hidden2} />
-            <Card state={hidden2} />
+            <Card
+              state={hidden}
+              image1='/images/tetris.png'
+              class1='Tetris'
+              image2='/images/speedtyping.png'
+              class2='Speed-Typing'
+            />
+            <Card
+              state={hidden}
+              image1='/images/pacman.jpg'
+              class1='Pacman'
+              image2='/images/pacman.jpg'
+              class2='na'
+            />
+            <Card
+              state={hidden}
+              image1='/images/chess1.png'
+              class1='Chess'
+              image2='/images/pacman.jpg'
+              class2='na'
+            />
+            <Card
+              state={hidden}
+              image1='/images/tic_tac_toe.png'
+              class1='Tic-Tac-Toe'
+              image2='/images/pacman.jpg'
+              class2='na'
+            />
           </div>
           <div className={hidden3}>
-            <Card state={hidden3} />
-            <Card state={hidden3} />
-            <Card state={hidden3} />
-            <Card state={hidden3} />
+            <Card
+              state={hidden3}
+              image1='/images/tetris.png'
+              class1=''
+              image2='/images/pacman.jpg'
+              class2=''
+            />
+            <Card
+              state={hidden3}
+              image1='/images/tetris.png'
+              class1=''
+              image2='/images/pacman.jpg'
+              class2=''
+            />
+            <Card
+              state={hidden3}
+              image1='/images/tetris.png'
+              class1=''
+              image2='/images/pacman.jpg'
+              class2=''
+            />
+            <Card
+              state={hidden3}
+              image1='/images/tetris.png'
+              class1=''
+              image2='/images/pacman.jpg'
+              class2=''
+            />
           </div>
           <div className={hidden4}>
-            <Card state={hidden4} />
-            <Card state={hidden4} />
-            <Card state={hidden4} />
-            <Card state={hidden4} />
+            <Card
+              state={hidden4}
+              image1='/images/tetris.png'
+              class1=''
+              image2='/images/pacman.jpg'
+              class2=''
+            />
+            <Card
+              state={hidden4}
+              image1='/images/tetris.png'
+              class1=''
+              image2='/images/pacman.jpg'
+              class2=''
+            />
+            <Card
+              state={hidden4}
+              image1='/images/tetris.png'
+              class1=''
+              image2='/images/pacman.jpg'
+              class2=''
+            />
+            <Card
+              state={hidden4}
+              image1='/images/tetris.png'
+              class1=''
+              image2='/images/pacman.jpg'
+              class2=''
+            />
           </div>
         </Details>
         <Wrap>

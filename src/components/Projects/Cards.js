@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-function Cards(state) {
+function Cards(props) {
   // const [hidden, setHidden] = useState(state);
 
   return (
     <Container>
       <Wrap>
-        <img src='/images/tetris.png' alt='' />
-        <span>Tetris</span>
+        <img className={props.class1} src={props.image1} alt='' />
+        <span>{props.class1}</span>
       </Wrap>
       <Wrap>
-        <img className='pacman' src='/images/pacman.jpg' alt='' />
-        <span>Pacman</span>
+        <img className={props.class2} src={props.image2} alt='' />
+        <span>{props.class2}</span>
       </Wrap>
     </Container>
   );
@@ -41,11 +41,26 @@ const Wrap = styled.div`
     width: 200px;
   }
 
-  .pacman {
+  .Pacman {
     object-fit: contain;
     width: 200px;
     transform: scale(1.01);
-    margin-top: -80px;
+    margin-top: -84px;
+  }
+
+  .Tic-Tac-Toe {
+    object-fit: contain;
+    width: 200px;
+    max-height: 180px;
+    transform: scale(1.11);
+    margin-top: -8px;
+
+    margin-bottom: 10px;
+  }
+
+  .Speed-Typing {
+    transform: scale(1.11);
+    margin-bottom: 10px;
   }
 
   span {
@@ -60,10 +75,10 @@ const Wrap = styled.div`
     }
 
     img {
-      filter: brightness(1.5);
+      filter: brightness(0.8);
     }
 
-    background-color: #003d13;
+    /* background-color: #003d13; */
   }
 `;
 

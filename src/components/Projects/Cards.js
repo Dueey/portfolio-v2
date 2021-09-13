@@ -123,6 +123,18 @@ const Wrap = styled.a`
     margin-bottom: 25px;
   }
 
+  .Chat-App {
+    transform: scale(1);
+    margin-top: -35px;
+    margin-bottom: 0px;
+  }
+
+  .Python-Music {
+    transform: scale(1.16);
+    margin-top: 12px;
+    margin-bottom: 15px;
+  }
+
   .Calculator {
     transform: scale(1.3);
     margin-top: 20px;

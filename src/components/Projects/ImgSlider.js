@@ -142,12 +142,12 @@ function ImgSlider() {
       </Wrap>
       <Wrap>
         <a
-          href='https://e-commerce-react-javascript.netlify.app/'
+          href='https://calculator-javascript-basic.netlify.app/'
           target='_blank'
           rel='noopener noreferrer'
         >
           <div className=''>
-            <img src='/images/spotify.png' alt='' />
+            <img src='/images/calculator1.png' alt='' />
           </div>
         </a>
       </Wrap>

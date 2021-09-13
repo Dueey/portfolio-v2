@@ -165,32 +165,33 @@ function Projects() {
               state={hidden4}
               image1='/images/travel1.png'
               class1='Travel'
-              image2='/images/tetris.png'
-              class2='Python-Music'
+              image2='/images/calculator.png'
+              class2='Calculator'
               link1='https://travel-website-react-javascript.netlify.app/'
+              link2='https://calculator-javascript-basic.netlify.app/'
             />
             <Card
               state={hidden4}
               image1='/images/discord-bot.png'
               class1='Discord-Music-Bot'
-              image2='/images/calculator.png'
-              class2='Calculator'
-              link1='https://discord.com/oauth2/authorize?client_id=827787615948242985&scope=bot&permissions=0'
-              link2='https://calculator-javascript-basic.netlify.app/'
-            />
-            <Card
-              state={hidden4}
-              image1='/images/tetris.png'
-              class1='Chat-App'
               image2='/images/task-tracker.png'
               class2='Task-Tracker'
-              link1='https://react-disney-clone-d5025.web.app/'
+              link1='https://discord.com/oauth2/authorize?client_id=827787615948242985&scope=bot&permissions=0'
               link2='https://task-tracker-react-javascript.netlify.app/'
             />
             <Card
               state={hidden4}
-              image1='/images/tetris.png'
-              class1='Spotify'
+              image1='/images/chat.png'
+              class1='Chat-App'
+              image2=''
+              class2=''
+              class3='na'
+              link1='https://sleepy-raman-c33727.netlify.app/'
+            />
+            <Card
+              state={hidden4}
+              image1='/images/python-music.png'
+              class1='Python-Music'
               image2=''
               class2=''
               class3='na'

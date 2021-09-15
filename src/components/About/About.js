@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Code, School, Build, FitnessCenter } from "@material-ui/icons";
 
 function About() {
   const [hidden, setHidden] = useState("hidden");
@@ -62,15 +63,19 @@ function About() {
         </Details>
         <Wrap>
           <span onClick={handleClick} className={hidden}>
+            <Code className='icon-1' />
             Coding
           </span>
           <span onClick={handleClick2} className={hidden2}>
+            <School className='icon-2' />
             University
           </span>
           <span onClick={handleClick3} className={hidden3}>
+            <Build className='icon-3' />
             Skills
           </span>
           <span onClick={handleClick4} className={hidden4}>
+            <FitnessCenter className='icon-4' />
             Hobbies
           </span>
         </Wrap>
@@ -95,6 +100,7 @@ const Wrapper = styled.div`
 const Wrap = styled.div`
   display: flex;
   color: white;
+  z-index: 2;
 
   span {
     -webkit-user-select: none;
@@ -111,28 +117,66 @@ const Wrap = styled.div`
     width: 220px;
     border: 1px solid #ed6a61;
     background-color: #29292c;
-    margin: 20px;
+    margin: 15px;
     cursor: pointer;
+    transition: 0.1s ease-in;
 
     :hover {
       color: #ed6a61;
     }
   }
+
+  .active {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-bottom: 14px;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid transparent;
+    background-color: #29292c;
+    cursor: pointer;
+    color: #ed6a61;
+  }
+
+  .icon-1 {
+    font-size: 28px;
+    margin-right: 8px;
+    margin-bottom: -3px;
+  }
+
+  .icon-2 {
+    font-size: 22px;
+    margin-right: 8px;
+    margin-bottom: -3px;
+  }
+
+  .icon-3 {
+    font-size: 18px;
+    margin-right: 8px;
+    margin-bottom: -3px;
+  }
+
+  .icon-4 {
+    font-size: 20px;
+    margin-right: 8px;
+    margin-bottom: -3px;
+  }
 `;
 
 const Details = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: absolute;
-  margin-top: 90px;
-  margin-left: 20px;
+  margin-top: 70px;
+  margin-left: 15px;
   overflow: hidden;
 
   div {
     display: flex;
     justify-content: center;
     height: 0px;
-    width: 0px;
+    width: 976px;
     transition: 0.1s;
   }
 
@@ -140,7 +184,7 @@ const Details = styled.div`
     border: 1px solid #ed6a61;
     background-color: #29292c;
     height: 600px;
-    width: 1006px;
+    width: 976px;
 
     transition: 0.3s ease-in;
   }

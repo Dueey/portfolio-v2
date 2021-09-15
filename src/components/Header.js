@@ -40,6 +40,10 @@ const Nav = styled.div`
 
 const NavMenu = styled.div`
   display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   a {
     position: relative;

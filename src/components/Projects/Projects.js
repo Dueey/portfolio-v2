@@ -14,6 +14,7 @@ function Projects() {
   const [hidden2, setHidden2] = useState("hidden");
   const [hidden3, setHidden3] = useState("hidden");
   const [hidden4, setHidden4] = useState("hidden");
+  const [hidden5, setHidden5] = useState("active");
 
   function handleClick() {
     if (hidden === "hidden") {
@@ -21,8 +22,10 @@ function Projects() {
       setHidden2("hidden");
       setHidden3("hidden");
       setHidden4("hidden");
+      setHidden5("hidden");
     } else if (hidden === "active") {
       setHidden("hidden");
+      setHidden5("active");
     }
   }
 
@@ -32,8 +35,10 @@ function Projects() {
       setHidden2("active");
       setHidden3("hidden");
       setHidden4("hidden");
+      setHidden5("hidden");
     } else if (hidden2 === "active") {
       setHidden2("hidden");
+      setHidden5("active");
     }
   }
 
@@ -43,8 +48,10 @@ function Projects() {
       setHidden2("hidden");
       setHidden3("active");
       setHidden4("hidden");
+      setHidden5("hidden");
     } else if (hidden3 === "active") {
       setHidden3("hidden");
+      setHidden5("active");
     }
   }
 
@@ -54,8 +61,10 @@ function Projects() {
       setHidden2("hidden");
       setHidden3("hidden");
       setHidden4("active");
+      setHidden5("hidden");
     } else if (hidden4 === "active") {
       setHidden4("hidden");
+      setHidden5("active");
     }
   }
 
@@ -64,6 +73,9 @@ function Projects() {
       <ImgSlider />
       <Wrapper>
         <Details>
+          <div className={hidden5}>
+            <h1>Projects</h1>
+          </div>
           <div className={hidden}>
             <Card
               state={hidden}
@@ -327,6 +339,16 @@ const Details = styled.div`
     height: 60vh;
     width: 0vw;
     transition: 0.1s;
+
+    h1 {
+      display: flex;
+      align-self: center;
+      margin-top: 50px;
+      margin-left: 200px;
+      font-size: 250px;
+      font-family: "Lobster", cursive;
+      color: gray;
+    }
   }
 
   .active {

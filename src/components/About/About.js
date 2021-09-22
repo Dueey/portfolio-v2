@@ -7,6 +7,7 @@ function About() {
   const [hidden2, setHidden2] = useState("hidden");
   const [hidden3, setHidden3] = useState("hidden");
   const [hidden4, setHidden4] = useState("hidden");
+  const [hidden5, setHidden5] = useState("active");
 
   function handleClick() {
     if (hidden === "hidden") {
@@ -14,8 +15,10 @@ function About() {
       setHidden2("hidden");
       setHidden3("hidden");
       setHidden4("hidden");
+      setHidden5("hidden");
     } else if (hidden === "active") {
       setHidden("hidden");
+      setHidden5("active");
     }
   }
 
@@ -25,8 +28,10 @@ function About() {
       setHidden2("active");
       setHidden3("hidden");
       setHidden4("hidden");
+      setHidden5("hidden");
     } else if (hidden2 === "active") {
       setHidden2("hidden");
+      setHidden5("active");
     }
   }
 
@@ -36,8 +41,10 @@ function About() {
       setHidden2("hidden");
       setHidden3("active");
       setHidden4("hidden");
+      setHidden5("hidden");
     } else if (hidden3 === "active") {
       setHidden3("hidden");
+      setHidden5("active");
     }
   }
 
@@ -47,8 +54,10 @@ function About() {
       setHidden2("hidden");
       setHidden3("hidden");
       setHidden4("active");
+      setHidden5("hidden");
     } else if (hidden4 === "active") {
       setHidden4("hidden");
+      setHidden5("active");
     }
   }
 
@@ -56,6 +65,9 @@ function About() {
     <Container>
       <Wrapper>
         <Details>
+          <div className={hidden5}>
+            <h1>About Me</h1>
+          </div>
           <div className={hidden}></div>
           <div className={hidden2}></div>
           <div className={hidden3}></div>
@@ -68,7 +80,7 @@ function About() {
           </span>
           <span onClick={handleClick2} className={hidden2}>
             <School className='icon-2' />
-            University
+            Academics
           </span>
           <span onClick={handleClick3} className={hidden3}>
             <Build className='icon-3' />
@@ -178,6 +190,15 @@ const Details = styled.div`
     height: 0px;
     width: 976px;
     transition: 0.1s;
+
+    h1 {
+      display: flex;
+      align-self: center;
+      margin-top: 50px;
+      font-size: 250px;
+      font-family: "Lobster", cursive;
+      color: gray;
+    }
   }
 
   .active {

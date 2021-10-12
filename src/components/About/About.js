@@ -200,7 +200,8 @@ const Details = styled.div`
       display: flex;
       align-self: center;
       margin-top: 50px;
-      font-size: 250px;
+      font-size: 200px;
+
       font-family: "Lobster", cursive;
       color: gray;
     }

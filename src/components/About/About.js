@@ -192,6 +192,11 @@ const Details = styled.div`
     transition: 0.1s;
 
     h1 {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
       display: flex;
       align-self: center;
       margin-top: 50px;

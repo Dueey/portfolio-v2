@@ -34,8 +34,26 @@ function Contact() {
               <ArrowBack className={arrow} onClick={handleClick} />
               <span>Email (Preferred Contact): 2103duykim@gmail.com</span>
               <span>Phone: (714) 944-0018</span>
-              <span>LinkedIn: 2103duykim@gmail.com</span>
-              <span>Indeed: 2103duykim@gmail.com</span>
+              <span>
+                LinkedIn:{" "}
+                <a
+                  href='https://www.linkedin.com/in/duy-kim-620698165/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Duy Kim
+                </a>
+              </span>
+              <span>
+                GitHub:{" "}
+                <a
+                  href='https://github.com/Dueey'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Dueey
+                </a>
+              </span>
             </div>
           </div>
         </Details>
@@ -92,6 +110,16 @@ const Details = styled.div`
         color: white;
         font-weight: bold;
         font-size: 20px;
+
+        a {
+          text-decoration: none;
+          color: lightblue;
+
+          :hover {
+            text-decoration: underline;
+            color: #f0b851;
+          }
+        }
       }
 
       .showArrow {

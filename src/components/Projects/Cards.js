@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 function Cards(props) {
-  // const [hidden, setHidden] = useState(state);
-
   return (
     <Container>
       <Wrap href={props.link1} target='_blank' rel='noopener noreferrer'>

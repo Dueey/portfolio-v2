@@ -69,7 +69,14 @@ function About() {
             <h1>About Me</h1>
           </div>
           <div className={hidden}></div>
-          <div className={hidden2}></div>
+          <div className={hidden2}>
+            <h2>University</h2>
+            <p>
+              My college years were spent studying Chemical Engineering at
+              California State University, Long Beach. The focus of my studies
+              revolved around chemical processes
+            </p>
+          </div>
           <div className={hidden3}></div>
           <div className={hidden4}></div>
         </Details>

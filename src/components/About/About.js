@@ -70,12 +70,40 @@ function About() {
           </div>
           <div className={hidden}></div>
           <div className={hidden2}>
-            <h2>University</h2>
-            <p>
-              My college years were spent studying Chemical Engineering at
-              California State University, Long Beach. The focus of my studies
-              revolved around chemical processes
-            </p>
+            <div>
+              <h2>University</h2>
+              <p>
+                I studied Chemical Engineering at California State University,
+                Long Beach from 2015 to 2019. The focus of these stuides mostly
+                pertained to chemical processes in factories. Being able to
+                calculate input and output flowrates, heat and mass balances,
+                and developing controllers to operate and control the processes
+                depending on required specifications were abilities needed in
+                this field. The field also branches outwards towards material
+                sciences, such as being able to test the properties of
+                materials, as well as producing them.
+              </p>
+              <p>
+                <a href='' target='_blank' rel='noopener noreferrer'>
+                  Chemical Engineering Resume
+                </a>
+              </p>
+              <h2>Online Courses</h2>
+              <p>
+                I first learned how to code through a web development course on
+                Udemy. In that course, I learned the basics of web dev from
+                JavaScript and front-end, to SQL and back-end, and to ReactJS.
+                From there, I took a course on how to develop an E-Commerce
+                website using PHP. From there on, I went to YouTube and followed
+                tutorials on how to build and deploy projects, such as games and
+                website clones.
+              </p>
+              <p>
+                <a href='' target='_blank' rel='noopener noreferrer'>
+                  Web Development Resume
+                </a>
+              </p>
+            </div>
           </div>
           <div className={hidden3}></div>
           <div className={hidden4}></div>
@@ -211,6 +239,32 @@ const Details = styled.div`
 
       font-family: "Lobster", cursive;
       color: gray;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #e0e0e0;
+      margin-top: 260px;
+
+      h2 {
+      }
+
+      p {
+        padding: 0px 40px 20px 40px;
+        margin-top: -5px;
+
+        a {
+          text-decoration: none;
+          color: lightblue;
+
+          :hover {
+            text-decoration: underline;
+            color: #ed6a61;
+          }
+        }
+      }
     }
   }
 

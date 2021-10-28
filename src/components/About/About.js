@@ -164,13 +164,41 @@ function About() {
           <div className={hidden3}>
             <div>
               <h2>Languages</h2>
-              <p>HTML, CSS, JavaScript, ReactJS, Python, Django, PHP, MATLAB</p>
+              <p>HTML, CSS, JavaScript, ReactJS, Python, PHP, MATLAB</p>
+              <div className='icon-container'>
+                <img src='/images/html.png' alt='' />
+                <img src='/images/css.png' alt='' />
+                <img src='/images/javascript.png' alt='' />
+                <img src='/images/react.png' alt='' />
+                <img src='/images/python.png' alt='' />
+                <img src='/images/php.png' alt='' />
+                <img src='/images/matlab.png' alt='' />
+              </div>
               <h2>Data Bases</h2>
               <p>SQL, Firebase, MongoDB, Mongoose, phpMyAdmin</p>
+              <div className='icon-container'>
+                <img src='/images/sql.png' alt='' />
+                <img src='/images/firebase.png' alt='' />
+                <img src='/images/mongodb.png' alt='' />
+                <img src='/images/mongoose.png' alt='' />
+                <img src='/images/phpmyadmin.png' alt='' />
+              </div>
               <h2>Environments</h2>
               <p>Github, Visual Studio Code, NodeJS, Netlify, XAMPP</p>
+              <div className='icon-container'>
+                <img src='/images/github.png' alt='' className='github' />
+                <img src='/images/vscode.png' alt='' />
+                <img src='/images/node.png' alt='' />
+                <img src='/images/netlify.png' alt='' />
+                <img src='/images/xampp.png' alt='' />
+              </div>
               <h2>Other Skills</h2>
               <p>Video Editing, Microsoft Office, Chemical Engineering</p>
+              <div className='icon-container'>
+                <img src='/images/videoediting.png' alt='' />
+                <img src='/images/microsoft.png' alt='' />
+                <img src='/images/chemical.png' alt='' className='chemical' />
+              </div>
             </div>
           </div>
           <div className={hidden4}>
@@ -363,6 +391,27 @@ const Details = styled.div`
       p {
         padding: 0px 40px 20px 40px;
         margin-top: -5px;
+      }
+
+      .icon-container {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+
+        img {
+          height: 40px;
+          position: relative;
+          margin: 0 5px;
+        }
+
+        .github {
+          filter: brightness(2);
+        }
+
+        .chemical {
+          height: 60px;
+          filter: invert();
+        }
       }
 
       .resume {

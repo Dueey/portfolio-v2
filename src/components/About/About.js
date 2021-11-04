@@ -204,7 +204,13 @@ function About() {
           <div className={hidden4}>
             <div>
               <h2>Powerlifting</h2>
-              <p></p>
+              <p>
+                Whenever I go to the gym or workout at home, I mainly powerlift.
+                Powerlifting is a sport in which you try to lift as much weight
+                as you can for the 3 main compound lifts: Squat, Bench, and
+                Deadlift. My training involves me following programs that
+                dictate me to perform specific exercises throughout the week.
+              </p>
               <h2>Video Games</h2>
               <p></p>
               <h2>Pop Culture</h2>
@@ -386,6 +392,7 @@ const Details = styled.div`
       margin-top: 260px;
 
       h2 {
+        margin-bottom: 10px;
       }
 
       p {
@@ -395,13 +402,14 @@ const Details = styled.div`
 
       .icon-container {
         margin: 0;
+        margin-bottom: 15px;
         display: flex;
         flex-direction: row;
 
         img {
           height: 40px;
           position: relative;
-          margin: 0 5px;
+          margin: 0 6px;
         }
 
         .github {

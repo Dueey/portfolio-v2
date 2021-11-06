@@ -212,11 +212,28 @@ function About() {
                 dictate me to perform specific exercises throughout the week.
               </p>
               <h2>Video Games</h2>
-              <p></p>
-              <h2>Pop Culture</h2>
-              <p></p>
+              <p>
+                I enjoy playing and watching others play games. I mainly play
+                casual PC games, such as Monster Hunter, Risk of Rain 2,
+                Battlefront 2, Icarus, GTFO, etc. I tend to stay away from very
+                competitive games, but I enjoy watching the competitive scene
+                for games like League of Legends of Legends, CSGO, and Valorant.
+              </p>
+              <h2>Popular Culture</h2>
+              <p>
+                I would say I'm a big fan of popular culture, so things such as
+                Marvel, Star Wars, and new TV Shows/Movies. I used to really be
+                into anime and K-pop, but I'm not in those phases at the moment.
+                I enjoy listening to several genres of music with EDM currently
+                being my most listened genre.
+              </p>
               <h2>Sports</h2>
-              <p></p>
+              <p>
+                While I don't play many sports, I enjoy watching football,
+                basketball, soccer, golf, etc. For football, I'm a huge New
+                Orleans Saints fan and for basketball, I like the Los Angeles
+                Lakers and Golden State Warriors.
+              </p>
             </div>
           </div>
         </Details>

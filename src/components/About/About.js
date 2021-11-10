@@ -105,28 +105,10 @@ function About() {
           <div className={hidden}>
             <div>
               <h2>University</h2>
-              <p>
-                I studied Chemical Engineering at California State University,
-                Long Beach from 2015 to 2019. The focus of these stuides mostly
-                pertained to chemical processes in factories. Being able to
-                calculate input and output flowrates, heat and mass balances,
-                and developing controllers to operate and control the processes
-                depending on required specifications were abilities needed in
-                this field. The field also branches outwards towards material
-                sciences, such as being able to test the properties of
-                materials, as well as producing them.
-              </p>
+              <p></p>
 
               <h2>Online Courses</h2>
-              <p>
-                I first learned how to code through a web development course on
-                Udemy. In that course, I learned the basics of web dev from
-                JavaScript and front-end, to SQL and back-end, and to ReactJS.
-                From there, I took a course on how to develop an E-Commerce
-                website using PHP. After that, I went to YouTube and followed
-                tutorials on how to build and deploy projects, such as games and
-                website clones.
-              </p>
+              <p></p>
             </div>
           </div>
           <div className={hidden2}>
@@ -219,20 +201,15 @@ function About() {
                 competitive games, but I enjoy watching the competitive scene
                 for games like League of Legends of Legends, CSGO, and Valorant.
               </p>
-              <h2>Popular Culture</h2>
+              <h2>Other Interests</h2>
               <p>
-                I would say I'm a big fan of popular culture, so things such as
-                Marvel, Star Wars, and new TV Shows/Movies. I used to really be
-                into anime and K-pop, but I'm not in those phases at the moment.
-                I enjoy listening to several genres of music with EDM currently
-                being my most listened genre.
-              </p>
-              <h2>Sports</h2>
-              <p>
-                While I don't play many sports, I enjoy watching football,
-                basketball, soccer, golf, etc. For football, I'm a huge New
-                Orleans Saints fan and for basketball, I like the Los Angeles
-                Lakers and Golden State Warriors.
+                I enjoy using my creative mind to create projects that would
+                impress others. Speaking outside of website development, I've
+                done a fair amount of video editing. I've made a couple video
+                skits of language courses in college, as well as some "Meme"
+                themed gameplay videos. I like to draw, even though I'm not good
+                at it, and I feel that I'm a perfectionist when it comes to
+                making things look presentable.
               </p>
             </div>
           </div>

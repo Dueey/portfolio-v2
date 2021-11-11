@@ -120,7 +120,7 @@ function About() {
                 issue and being able to solve it, even if it takes hours, is
                 what fuels my passion for coding.
               </p>
-              <img className='profile' src='images/DuyKim.png' alt='' />
+              <img className='profile' src='images/Duy.png' alt='' />
             </div>
           </div>
           <div className={hidden2}>
@@ -407,8 +407,11 @@ const Details = styled.div`
       }
 
       .profile {
-        height: 150px;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
         position: relative;
+        border-radius: 50%;
       }
 
       .icon-container {

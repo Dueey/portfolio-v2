@@ -104,11 +104,23 @@ function About() {
           </div>
           <div className={hidden}>
             <div>
-              <h2>University</h2>
-              <p></p>
-
-              <h2>Online Courses</h2>
-              <p></p>
+              <h2>Coding</h2>
+              <p>
+                I started learning about coding and website development after
+                college. I was suggested to try it out and to see if it was
+                something I would want to do in the future. I started off with a
+                basic introduction video to web development and since then, I
+                have been following tutorials and building my own projects.
+                While I am not that creative with front-end design, I do try to
+                make things look presentable in my eyes. I will say that
+                following a course and tutorial was very tedious and wasn't as
+                engaging as I had hoped, but when it comes to building something
+                from scratch, I do feel empowered and I feel eager to figure out
+                solutions to new challenges. Just being met by a complicated
+                issue and being able to solve it, even if it takes hours, is
+                what fuels my passion for coding.
+              </p>
+              <img className='profile' src='images/DuyKim.png' alt='' />
             </div>
           </div>
           <div className={hidden2}>
@@ -392,6 +404,11 @@ const Details = styled.div`
       p {
         padding: 0px 40px 20px 40px;
         margin-top: -5px;
+      }
+
+      .profile {
+        height: 150px;
+        position: relative;
       }
 
       .icon-container {

@@ -124,35 +124,39 @@ function About() {
             </div>
           </div>
           <div className={hidden2}>
-            <div>
-              <h2>University</h2>
-              <p>
-                I studied Chemical Engineering at California State University,
-                Long Beach from 2015 to 2019. The focus of these stuides mostly
-                pertained to chemical processes in factories. Being able to
-                calculate input and output flowrates, heat and mass balances,
-                and developing controllers to operate and control the processes
-                depending on required specifications were abilities needed in
-                this field. The field also branches outwards towards material
-                sciences, such as being able to test the properties of
-                materials, as well as producing them.
-              </p>
-              <p className='resume' onClick={handleShowImage1}>
-                Chemical Engineering Resume
-              </p>
-              <h2>Online Courses</h2>
-              <p>
-                I first learned how to code through a web development course on
-                Udemy. In that course, I learned the basics of web dev from
-                JavaScript and front-end, to SQL and back-end, and to ReactJS.
-                From there, I took a course on how to develop an E-Commerce
-                website using PHP. After that, I went to YouTube and followed
-                tutorials on how to build and deploy projects, such as games and
-                website clones.
-              </p>
-              <p className='resume' onClick={handleShowImage2}>
-                Web Development Resume
-              </p>
+            <div className='column'>
+              <div>
+                <h2>University</h2>
+                <p>
+                  I studied Chemical Engineering at California State University,
+                  Long Beach from 2015 to 2019. The focus of these stuides
+                  mostly pertained to chemical processes in factories. Being
+                  able to calculate input and output flowrates, heat and mass
+                  balances, and developing controllers to operate and control
+                  the processes depending on required specifications were
+                  abilities needed in this field. The field also branches
+                  outwards towards material sciences, such as being able to test
+                  the properties of materials, as well as producing them.
+                </p>
+                <p className='resume' onClick={handleShowImage1}>
+                  Chemical Engineering Resume
+                </p>
+              </div>
+              <div>
+                <h2>Online Courses</h2>
+                <p>
+                  I first learned how to code through a web development course
+                  on Udemy. In that course, I learned the basics of web dev from
+                  JavaScript and front-end, to SQL and back-end, and to ReactJS.
+                  From there, I took a course on how to develop an E-Commerce
+                  website using PHP. After that, I went to YouTube and followed
+                  tutorials on how to build and deploy projects, such as games
+                  and website clones.
+                </p>
+                <p className='resume' onClick={handleShowImage2}>
+                  Web Development Resume
+                </p>
+              </div>
             </div>
           </div>
           <div className={hidden3}>
@@ -390,6 +394,29 @@ const Details = styled.div`
       color: gray;
     }
 
+    .column {
+      display: flex;
+      flex-direction: row;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #e0e0e0;
+        margin-top: 250px;
+
+        h2 {
+          margin-bottom: 30px;
+        }
+
+        p {
+          padding: 0px 40px 20px 40px;
+          margin-top: -5px;
+          min-height: 250px;
+        }
+      }
+    }
+
     div {
       display: flex;
       flex-direction: column;
@@ -404,6 +431,7 @@ const Details = styled.div`
       p {
         padding: 0px 40px 20px 40px;
         margin-top: -5px;
+        line-height: 1.5;
       }
 
       .profile {

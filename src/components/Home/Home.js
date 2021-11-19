@@ -97,38 +97,47 @@ function Home() {
           <div>
             <div className={info1 ? "info1 active" : "info1"}>
               <div className='circle' onClick={handleInfo1Click}>
-                <h2>About</h2>
+                <h2>Skills</h2>
               </div>
               <p className={details1 ? "details1 active" : "details1"}>
-                My name is Duy Kim and I am trying to be a web developer! I
-                enjoy coding and learning about the inner mechanisms of the
-                internet!
+                I have coded with several projects with ReactJS being the main
+                framework. I enjoy learning new languages because coding
+                languages are not that different from each other. I find it very
+                fun seeing how each languages' syntax differs from one another.
               </p>
             </div>
             <div className={info2 ? "info2 active" : "info2"}>
               <div className='triangle' onClick={handleInfo2Click}>
-                <h2>Skills</h2>
+                <h2>Eager</h2>
               </div>
-              <center></center>
               <p className={details2 ? "details2 active" : "details2"}>
-                My strongest skills would be my familiarity with ReactJS and my
-                ability to learn quickly.
+                When it comes to finishing a project, I am very eager to impress
+                others. Being able to see something on the internet and managing
+                to replicate it from scratch brings me a lot of joy and
+                confidence in myself.
               </p>
             </div>
             <div className={info3 ? "info3 active" : "info3"}>
               <div className='square' onClick={handleInfo3Click}>
-                <h2>Projects</h2>
+                <h2>Chill</h2>
               </div>
               <p className={details3 ? "details3 active" : "details3"}>
-                Here are some of the bigger projects I have made.
+                Overall, I'd say I'm pretty chill. Give me a task and I will
+                complete it, no questions asked. I like to focus on my code and
+                when I come across a frustrating issue, I like to walk away and
+                come back with a fresh mindset, ready to tackle it again.
               </p>
             </div>
             <div className={info4 ? "info4 active" : "info4"}>
               <div className='pentagon' onClick={handleInfo4Click}>
-                <h2>Contact</h2>
+                <h2>Goofy</h2>
               </div>
               <p className={details4 ? "details4 active" : "details4"}>
-                The easiest way to contact me is email: 2103duykim@gmail.com
+                Once I'm really comfortable and know others well, I sometimes
+                act a bit silly. I find that my method of breaking the ice and
+                getting along with others. Sometimes when I finish a part of my
+                code, I take a step back to take it all in and then I give
+                myself a pat on the back.
               </p>
             </div>
           </div>

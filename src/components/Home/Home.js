@@ -168,6 +168,7 @@ const Wrap = styled.div`
 
   h1 {
     font-size: 70px;
+    z-index: 2;
   }
 
   p {
@@ -177,6 +178,7 @@ const Wrap = styled.div`
     user-select: none;
 
     font-size: 20px;
+    z-index: 2;
 
     .fun {
       cursor: pointer;
@@ -192,6 +194,7 @@ const Wrap = styled.div`
   }
 
   .showFun {
+    z-index: 2;
     display: flex;
     position: absolute;
     right: 300px;
@@ -213,7 +216,8 @@ const Wrap = styled.div`
     div {
       display: flex;
       flex-direction: row;
-      margin-left: 700px;
+      position: relative;
+      left: 8vw;
 
       div {
         height: 150px;
@@ -253,7 +257,8 @@ const Wrap = styled.div`
 
       p {
         width: 600px;
-        margin-left: 100px;
+        position: relative;
+        left: 10vw;
         margin-top: 50px;
         justify-self: center;
         text-align: center;
@@ -309,7 +314,8 @@ const Wrap = styled.div`
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-right: 100vh;
+      position: relative;
+      left: -15vw;
       transition: 0.4s ease-in;
       transition-delay: 0s;
     }
@@ -318,7 +324,8 @@ const Wrap = styled.div`
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-right: 100vh;
+      position: relative;
+      left: -15vw;
       transition: 0.4s ease-in;
       transition-delay: 0.2s;
     }
@@ -327,7 +334,8 @@ const Wrap = styled.div`
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-right: 100vh;
+      position: relative;
+      left: -15vw;
       transition: 0.4s ease-in;
       transition-delay: 0.4s;
     }
@@ -336,7 +344,8 @@ const Wrap = styled.div`
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-right: 100vh;
+      position: relative;
+      left: -15vw;
       transition: 0.4s ease-in;
       transition-delay: 0.6s;
     }

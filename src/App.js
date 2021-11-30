@@ -11,19 +11,22 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        <Header />
         <Switch>
           <Route exact path='/'>
+            <Header />
             <Home />
             <Footer />
           </Route>
           <Route exact path='/about'>
+            <Header />
             <About />
           </Route>
           <Route exact path='/projects'>
+            <Header />
             <Projects />
           </Route>
           <Route exact path='/contact'>
+            <Header />
             <Contact />
           </Route>
         </Switch>

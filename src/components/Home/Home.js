@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Header from "../Header";
 
 function Home() {
   const [fun, setFun] = useState("hideFun");
@@ -82,6 +83,7 @@ function Home() {
 
   return (
     <Container>
+      {/* <Header /> */}
       <Wrapper>
         <Wrap>
           <h1>Hello! I'm Duy :D</h1>
@@ -149,15 +151,16 @@ function Home() {
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   height: 200vh;
   background-color: #dbdbdb;
-  justify-content: center;
+  /* justify-content: center; */
 `;
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 `;
 
 const Wrap = styled.div`

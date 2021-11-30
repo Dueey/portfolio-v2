@@ -124,7 +124,7 @@ const Wrap = styled.a`
   .Chat-App {
     transform: scale(1);
     margin-top: -35px;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
   }
 
   .Python-Music {

@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import { Home, Person, Computer, Message } from "@material-ui/icons";
+import { Home, Person, Computer, Message, Dehaze } from "@material-ui/icons";
 
 function Header() {
+  const [dropdown, setDropdown] = useState("hidden");
+  const [headerHeight, setHeaderHeight] = useState("shorter");
+
+  function handleClick() {
+    if (dropdown === "hidden") {
+      setDropdown("show");
+      setHeaderHeight("taller");
+    } else {
+      setDropdown("hidden");
+      setHeaderHeight("shorter");
+    }
+  }
+
   return (
-    <Nav>
-      <NavMenu>
-        <div>
-          <a href='/' className='home'>
-            <Home className='icon' />
-            <span>HOME</span>
-          </a>
-        </div>
+    <Nav className='headerHeight'>
+      <NavMenu className={dropdown}>
+        <a href='/' className='home'>
+          <Home className='icon' />
+          <span>HOME</span>
+        </a>
         <a href='/about' className='about'>
           <Person className='icon' />
           <span>ABOUT ME</span>
@@ -25,17 +36,66 @@ function Header() {
           <span>CONTACT</span>
         </a>
       </NavMenu>
+      <Dehaze className='dropdown' onClick={handleClick} />
     </Nav>
   );
 }
 
 const Nav = styled.div`
   background: #29292c;
-  /* background-color: #090b13; */
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 51px;
+  z-index: 3;
+  position: relative;
+
+  .dropdown {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    height: 10vh;
+
+    .taller {
+      height: 50vh;
+    }
+
+    .dropdown {
+      display: flex;
+      color: white;
+      font-size: 100px;
+      position: absolute;
+      right: 5vw;
+      cursor: pointer;
+    }
+
+    .hidden {
+      height: 0vw;
+      font-size: 60px;
+      margin-top: -50vh;
+
+      a {
+        display: none;
+      }
+    }
+
+    .show {
+      display: flex;
+      font-size: 60px;
+      margin-top: 35vh;
+      height: 60vw;
+      transition: 0.1s ease-in;
+
+      a {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        width: 100vw;
+      }
+
+      .icon {
+        font-size: 60px;
+      }
+    }
+  }
 `;
 
 const NavMenu = styled.div`
@@ -110,6 +170,10 @@ const NavMenu = styled.div`
     :hover {
       /* border-bottom: 2px solid #fff; */
     }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 

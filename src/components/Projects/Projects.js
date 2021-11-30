@@ -79,7 +79,7 @@ function Projects() {
           <div className={hidden}>
             <Card
               state={hidden}
-              image1='/images/amazon-clone.png'
+              image1='/images/amazon-clone.jpg'
               class1='Amazon'
               image2=''
               class2=''
@@ -88,7 +88,7 @@ function Projects() {
             />
             <Card
               state={hidden}
-              image1='/images/disney+.png'
+              image1='/images/disney+.jpg'
               class1='Disney'
               image2=''
               class2=''
@@ -97,7 +97,7 @@ function Projects() {
             />
             <Card
               state={hidden}
-              image1='/images/netflix-clone.png'
+              image1='/images/netflix-clone.jpg'
               class1='Netflix'
               image2=''
               class2=''
@@ -106,7 +106,7 @@ function Projects() {
             />
             <Card
               state={hidden}
-              image1='/images/yelp-clone.png'
+              image1='/images/yelp-clone.jpg'
               class1='Yelp-WIP'
               image2=''
               class2=''
@@ -117,9 +117,9 @@ function Projects() {
           <div className={hidden2}>
             <Card
               state={hidden}
-              image1='/images/tetris.png'
+              image1='/images/tetris.jpg'
               class1='Tetris'
-              image2='/images/speedtyping.png'
+              image2='/images/speedtyping.jpg'
               class2='Speed-Typing'
               link1='https://tetris-react-javascript.netlify.app/'
               link2='https://speed-typing-javascript.netlify.app/'
@@ -135,7 +135,7 @@ function Projects() {
             />
             <Card
               state={hidden}
-              image1='/images/chess1.png'
+              image1='/images/chess1.jpg'
               class1='Chess'
               image2=''
               class2=''
@@ -144,7 +144,7 @@ function Projects() {
             />
             <Card
               state={hidden}
-              image1='/images/tic_tac_toe.png'
+              image1='/images/tic_tac_toe.jpg'
               class1='Tic-Tac-Toe'
               image2=''
               class2=''
@@ -155,7 +155,7 @@ function Projects() {
           <div className={hidden3}>
             <Card
               state={hidden}
-              image1='/images/amazon-clone.png'
+              image1='/images/amazon-clone.jpg'
               class1='Amazon'
               image2=''
               class2=''
@@ -164,7 +164,7 @@ function Projects() {
             />
             <Card
               state={hidden3}
-              image1='/images/store.png'
+              image1='/images/store.jpg'
               class1='E-Commerce'
               image2=''
               class2=''
@@ -175,25 +175,25 @@ function Projects() {
           <div className={hidden4}>
             <Card
               state={hidden4}
-              image1='/images/travel1.png'
+              image1='/images/travel1.jpg'
               class1='Travel'
-              image2='/images/calculator.png'
+              image2='/images/calculator.jpg'
               class2='Calculator'
               link1='https://travel-website-react-javascript.netlify.app/'
               link2='https://calculator-javascript-basic.netlify.app/'
             />
             <Card
               state={hidden4}
-              image1='/images/discord-bot.png'
+              image1='/images/discord-bot.jpg'
               class1='Discord-Music-Bot'
-              image2='/images/task-tracker.png'
+              image2='/images/task-tracker.jpg'
               class2='Task-Tracker'
               link1='https://discord.com/oauth2/authorize?client_id=827787615948242985&scope=bot&permissions=0'
               link2='https://task-tracker-react-javascript.netlify.app/'
             />
             <Card
               state={hidden4}
-              image1='/images/chat.png'
+              image1='/images/chat.jpg'
               class1='Chat-App'
               image2=''
               class2=''
@@ -202,7 +202,7 @@ function Projects() {
             />
             <Card
               state={hidden4}
-              image1='/images/python-music.png'
+              image1='/images/python-music.jpg'
               class1='Python-Music'
               image2=''
               class2=''

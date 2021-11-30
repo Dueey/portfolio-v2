@@ -4,15 +4,12 @@ import { Home, Person, Computer, Message, Dehaze } from "@material-ui/icons";
 
 function Header() {
   const [dropdown, setDropdown] = useState("hidden");
-  const [headerHeight, setHeaderHeight] = useState("shorter");
 
   function handleClick() {
     if (dropdown === "hidden") {
       setDropdown("show");
-      setHeaderHeight("taller");
     } else {
       setDropdown("hidden");
-      setHeaderHeight("shorter");
     }
   }
 
@@ -45,6 +42,7 @@ const Nav = styled.div`
   background: #29292c;
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 3;
   position: relative;
 
@@ -52,19 +50,15 @@ const Nav = styled.div`
     display: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) and (min-width: 426px) {
     height: 10vh;
-
-    .taller {
-      height: 50vh;
-    }
 
     .dropdown {
       display: flex;
       color: white;
       font-size: 100px;
       position: absolute;
-      right: 5vw;
+      right: 10vw;
       cursor: pointer;
     }
 
@@ -93,6 +87,48 @@ const Nav = styled.div`
 
       .icon {
         font-size: 60px;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    height: 6vh;
+
+    .dropdown {
+      display: flex;
+      color: white;
+      font-size: 60px;
+      position: absolute;
+      right: 10vw;
+      cursor: pointer;
+    }
+
+    .hidden {
+      height: 0vw;
+      font-size: 25px;
+      margin-top: -50vh;
+
+      a {
+        display: none;
+      }
+    }
+
+    .show {
+      display: flex;
+      font-size: 25px;
+      margin-top: 18vh;
+      margin-left: -3vw;
+      height: 60vw;
+      transition: 0.1s ease-in;
+
+      a {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        width: 100vw;
+      }
+
+      .icon {
+        font-size: 30px;
       }
     }
   }

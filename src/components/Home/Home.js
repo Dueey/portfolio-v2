@@ -205,6 +205,28 @@ const Wrap = styled.div`
     border-radius: 20px;
   }
 
+  @media (max-width: 768px) {
+    .hideFun,
+    .showFun {
+      display: none;
+    }
+
+    h1 {
+      width: 80%;
+    }
+
+    p {
+      color: black;
+      width: 80%;
+
+      .fun {
+        :hover {
+          color: black;
+        }
+      }
+    }
+  }
+
   div {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -301,56 +323,95 @@ const Wrap = styled.div`
         transition: 0.6s ease-in;
         transition-delay: 1s;
       }
+
+      @media (max-width: 768px) and (min-width: 425px) {
+        align-items: center;
+
+        div {
+          display: flex;
+          left: 20vw;
+          top: 2vh;
+        }
+
+        p {
+          width: 60%;
+          color: black;
+          font-size: 24px;
+          left: 20vw;
+        }
+      }
+
+      @media (max-width: 425px) {
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        left: 0;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          left: 0;
+        }
+
+        p {
+          width: 80%;
+          left: 0;
+          color: black;
+          font-size: 24px;
+        }
+      }
     }
 
-    .info1,
-    .info2,
-    .info3,
-    .info4 {
-      display: flex;
-      margin-right: 0vh;
-      transition: 0.2s ease-in;
-      background-color: #dbdbdb;
-    }
+    @media (min-width: 426px) {
+      .info1,
+      .info2,
+      .info3,
+      .info4 {
+        display: flex;
+        margin-right: 0vh;
+        transition: 0.2s ease-in;
+        background-color: #dbdbdb;
+      }
 
-    .info1.active {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      position: relative;
-      left: -15vw;
-      transition: 0.4s ease-in;
-      transition-delay: 0s;
-    }
+      .info1.active {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        left: -15vw;
+        transition: 0.4s ease-in;
+        transition-delay: 0s;
+      }
 
-    .info2.active {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      position: relative;
-      left: -15vw;
-      transition: 0.4s ease-in;
-      transition-delay: 0.2s;
-    }
+      .info2.active {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        left: -15vw;
+        transition: 0.4s ease-in;
+        transition-delay: 0.2s;
+      }
 
-    .info3.active {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      position: relative;
-      left: -15vw;
-      transition: 0.4s ease-in;
-      transition-delay: 0.4s;
-    }
+      .info3.active {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        left: -15vw;
+        transition: 0.4s ease-in;
+        transition-delay: 0.4s;
+      }
 
-    .info4.active {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      position: relative;
-      left: -15vw;
-      transition: 0.4s ease-in;
-      transition-delay: 0.6s;
+      .info4.active {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        left: -15vw;
+        transition: 0.4s ease-in;
+        transition-delay: 0.6s;
+      }
     }
   }
 `;

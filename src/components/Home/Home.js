@@ -152,7 +152,7 @@ function Home() {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 200vh;
+  height: 400vh;
   background-color: #dbdbdb;
   /* justify-content: center; */
 `;
@@ -324,12 +324,13 @@ const Wrap = styled.div`
         transition-delay: 1s;
       }
 
-      @media (max-width: 768px) and (min-width: 425px) {
+      @media (max-width: 768px) and (min-width: 426px) {
         align-items: center;
+        flex-direction: column;
 
         div {
           display: flex;
-          left: 20vw;
+          left: 46vw;
           top: 2vh;
         }
 
@@ -337,7 +338,7 @@ const Wrap = styled.div`
           width: 60%;
           color: black;
           font-size: 24px;
-          left: 20vw;
+          left: 35vw;
         }
       }
 

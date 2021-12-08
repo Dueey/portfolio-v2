@@ -330,7 +330,8 @@ const Wrap = styled.div`
 
         div {
           display: flex;
-          left: 46vw;
+          /* left: 46vw; */
+          left: -8vw;
           top: 2vh;
         }
 
@@ -338,7 +339,8 @@ const Wrap = styled.div`
           width: 60%;
           color: black;
           font-size: 24px;
-          left: 35vw;
+          /* left: 35vw; */
+          left: -9vw;
         }
       }
 
@@ -351,19 +353,19 @@ const Wrap = styled.div`
         div {
           display: flex;
           flex-direction: column;
-          left: 0;
+          left: 0vw;
         }
 
         p {
           width: 80%;
-          left: 0;
+          left: 0vw;
           color: black;
           font-size: 24px;
         }
       }
     }
 
-    @media (min-width: 426px) {
+    @media (min-width: 769px) {
       .info1,
       .info2,
       .info3,

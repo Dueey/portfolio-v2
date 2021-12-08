@@ -314,7 +314,8 @@ const Wrap = styled.div`
     font-size: 20px;
     letter-spacing: 1.5px;
     height: 40px;
-    width: 220px;
+    width: 20.1vw;
+    max-width: 220px;
     border: 1px solid #ed6a61;
     background-color: #29292c;
     margin: 15px;
@@ -361,6 +362,12 @@ const Wrap = styled.div`
     margin-right: 8px;
     margin-bottom: -3px;
   }
+
+  @media (max-width: 1160px) {
+    span {
+      /* max-width: 80%; */
+    }
+  }
 `;
 
 const Details = styled.div`
@@ -377,7 +384,9 @@ const Details = styled.div`
     justify-content: center;
     height: 0px;
     width: 976px;
+    max-width: 976px;
     transition: 0.1s;
+    overflow: hidden;
 
     h1 {
       -webkit-user-select: none;
@@ -488,6 +497,12 @@ const Details = styled.div`
 
   .hidden {
     overflow: hidden;
+  }
+
+  @media (max-width: 1160px) {
+    div {
+      width: 80vw;
+    }
   }
 `;
 

@@ -327,16 +327,18 @@ const Wrap = styled.div`
     }
   }
 
-  .active {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    padding-bottom: 14px;
-    letter-spacing: 1.5px;
-    border-bottom: 1px solid transparent;
-    background-color: #29292c;
-    cursor: pointer;
-    color: #ed6a61;
+  @media (min-width: 769px) {
+    .active {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      padding-bottom: 14px;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid transparent;
+      background-color: #29292c;
+      cursor: pointer;
+      color: #ed6a61;
+    }
   }
 
   .icon-1 {
@@ -365,7 +367,33 @@ const Wrap = styled.div`
 
   @media (max-width: 1160px) {
     span {
-      /* max-width: 80%; */
+      margin-right: 1vw;
+    }
+
+    /* .icon-1,
+    .icon-2,
+    .icon-3,
+    .icon-4 {
+      display: none;
+    } */
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    span {
+      font-size: 50px;
+      height: 12vh;
+      width: 80vw;
+      max-width: 80vw;
+      margin: 20px;
+    }
+
+    .icon-1,
+    .icon-2,
+    .icon-3,
+    .icon-4 {
+      font-size: 50px;
     }
   }
 `;
@@ -386,7 +414,6 @@ const Details = styled.div`
     width: 976px;
     max-width: 976px;
     transition: 0.1s;
-    overflow: hidden;
 
     h1 {
       -webkit-user-select: none;
@@ -423,6 +450,10 @@ const Details = styled.div`
           margin-top: -5px;
           min-height: 250px;
         }
+
+        .resume {
+          margin-top: 90px;
+        }
       }
     }
 
@@ -431,7 +462,7 @@ const Details = styled.div`
       flex-direction: column;
       align-items: center;
       color: #e0e0e0;
-      margin-top: 260px;
+      margin-top: 280px;
 
       h2 {
         margin-bottom: 10px;
@@ -490,7 +521,8 @@ const Details = styled.div`
     border: 1px solid #ed6a61;
     background-color: #29292c;
     height: 600px;
-    width: 976px;
+    max-width: 976px;
+    width: 90vw;
 
     transition: 0.3s ease-in;
   }
@@ -501,7 +533,7 @@ const Details = styled.div`
 
   @media (max-width: 1160px) {
     div {
-      width: 80vw;
+      width: 90vw;
     }
   }
 `;

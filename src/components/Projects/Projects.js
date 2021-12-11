@@ -336,7 +336,7 @@ const Details = styled.div`
   div {
     display: flex;
     flex-wrap: wrap;
-    height: 60vh;
+    height: 600px;
     width: 0vw;
     transition: 0.1s;
 
@@ -357,7 +357,8 @@ const Details = styled.div`
   }
 
   .active {
-    width: 65vw;
+    /* width: 65vw; */
+    width: 1250px;
     border: 1px solid #30e389;
     background-color: #29292c;
     transition: 0.3s ease-in;
@@ -365,6 +366,9 @@ const Details = styled.div`
 
   .hidden {
     overflow: hidden;
+  }
+
+  @media (max-width: 768px) {
   }
 `;
 

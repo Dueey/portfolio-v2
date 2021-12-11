@@ -593,7 +593,7 @@ const Details = styled.div`
       max-width: 976px;
       width: 81.5vw;
       margin-top: 80px;
-      margin-bottom: 130px;
+      margin-bottom: 150px;
       padding-top: 10px;
       padding-bottom: 20px;
 

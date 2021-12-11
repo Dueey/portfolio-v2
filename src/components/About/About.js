@@ -99,7 +99,7 @@ function About() {
       <Close className={close} onClick={handleClose} />
       <Wrapper>
         <Details>
-          <div className={hidden5}>
+          <div className={hidden5} id='about-me'>
             <h1>About Me</h1>
           </div>
           <div className={hidden}>
@@ -199,7 +199,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className={hidden4}>
+          <div className={hidden4} id='hobbies'>
             <div>
               <h2>Powerlifting</h2>
               <p>
@@ -258,6 +258,10 @@ const Container = styled.div`
   justify-content: center;
   height: 105vh;
   background-color: #18181b;
+
+  @media (max-width: 768px) {
+    height: 500vh;
+  }
 
   img {
     position: absolute;
@@ -387,6 +391,7 @@ const Wrap = styled.div`
       width: 80vw;
       max-width: 80vw;
       margin: 20px;
+      margin-bottom: 820px;
     }
 
     .icon-1,
@@ -410,6 +415,7 @@ const Details = styled.div`
   div {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 0px;
     width: 976px;
     max-width: 976px;
@@ -457,12 +463,44 @@ const Details = styled.div`
       }
     }
 
+    @media (max-width: 768px) {
+      .column {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #e0e0e0;
+          margin-top: 300px;
+          margin-bottom: 50px;
+
+          h2 {
+            margin-bottom: 20px;
+          }
+
+          p {
+            padding: 0px 40px 20px 40px;
+            margin-top: -5px;
+            min-height: 250px;
+            width: 80%;
+          }
+
+          .resume {
+            margin-top: -30px;
+            display: flex;
+          }
+        }
+      }
+    }
+
     div {
       display: flex;
       flex-direction: column;
       align-items: center;
       color: #e0e0e0;
-      margin-top: 280px;
+      /* margin-top: 280px; */
 
       h2 {
         margin-bottom: 10px;
@@ -534,6 +572,32 @@ const Details = styled.div`
   @media (max-width: 1160px) {
     div {
       width: 90vw;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #about-me {
+      display: none;
+    }
+
+    #hobbies {
+      font-size: smaller;
+    }
+
+    .active,
+    .hidden {
+      overflow: visible;
+      border: 1px solid #ed6a61;
+      background-color: #29292c;
+      height: 700px;
+      max-width: 976px;
+      width: 81.5vw;
+      margin-top: 80px;
+      margin-bottom: 130px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+
+      transition: 0.3s ease-in;
     }
   }
 `;

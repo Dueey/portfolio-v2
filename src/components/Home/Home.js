@@ -331,7 +331,7 @@ const Wrap = styled.div`
         div {
           display: flex;
           /* left: 46vw; */
-          left: -8vw;
+          /* left: -8vw; */
           top: 2vh;
         }
 
@@ -340,7 +340,7 @@ const Wrap = styled.div`
           color: black;
           font-size: 24px;
           /* left: 35vw; */
-          left: -9vw;
+          left: 0vw;
         }
       }
 
@@ -362,6 +362,12 @@ const Wrap = styled.div`
           color: black;
           font-size: 24px;
         }
+      }
+    }
+
+    @media (max-width: 768px) {
+      div {
+        left: 0vw;
       }
     }
 

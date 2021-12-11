@@ -75,14 +75,15 @@ const Nav = styled.div`
     .show {
       display: flex;
       font-size: 60px;
-      margin-top: 35vh;
-      height: 60vw;
+      margin-top: 600px;
+      height: 520px;
       transition: 0.1s ease-in;
+      /* margin-left: -3vw; */
 
       a {
         padding-top: 10px;
         padding-bottom: 40px;
-        width: 100vw;
+        width: 99vw;
       }
 
       .icon {
@@ -116,9 +117,9 @@ const Nav = styled.div`
     .show {
       display: flex;
       font-size: 25px;
-      margin-top: 18vh;
+      margin-top: 290px;
       margin-left: -3vw;
-      height: 60vw;
+      height: 200px;
       transition: 0.1s ease-in;
 
       a {
@@ -189,7 +190,7 @@ const NavMenu = styled.div`
   } */
 
   .icon {
-    margin-bottom: -3px;
+    margin-bottom: -12px;
     padding: 0 7px;
     font-size: 20px;
   }
@@ -197,6 +198,7 @@ const NavMenu = styled.div`
   span {
     letter-spacing: 1.5px;
     white-space: nowrap;
+    padding-top: 10px;
     padding-bottom: 6px;
     margin-bottom: -9px;
     border-bottom: 2px solid transparent;

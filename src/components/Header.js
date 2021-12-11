@@ -51,7 +51,7 @@ const Nav = styled.div`
   }
 
   @media (max-width: 768px) and (min-width: 426px) {
-    height: 10vh;
+    height: 120px;
 
     .dropdown {
       display: flex;
@@ -81,8 +81,8 @@ const Nav = styled.div`
       /* margin-left: -3vw; */
 
       a {
-        padding-top: 10px;
-        padding-bottom: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         width: 99vw;
       }
 
@@ -93,7 +93,7 @@ const Nav = styled.div`
   }
 
   @media (max-width: 425px) {
-    height: 6vh;
+    height: 100px;
 
     .dropdown {
       display: flex;
@@ -123,8 +123,8 @@ const Nav = styled.div`
       transition: 0.1s ease-in;
 
       a {
-        padding-top: 10px;
-        padding-bottom: 40px;
+        padding-top: 25px;
+        padding-bottom: 35px;
         width: 100vw;
       }
 

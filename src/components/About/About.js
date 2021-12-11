@@ -178,8 +178,16 @@ function About() {
                 <img src='/images/sql.png' alt='' />
                 <img src='/images/firebase.png' alt='' />
                 <img src='/images/mongodb.png' alt='' />
-                <img src='/images/mongoose.png' alt='' />
-                <img src='/images/phpmyadmin.png' alt='' />
+                <img
+                  src='/images/mongoose.png'
+                  alt=''
+                  className='longer-icon'
+                />
+                <img
+                  src='/images/phpmyadmin.png'
+                  alt=''
+                  className='longer-icon'
+                />
               </div>
               <h2>Environments</h2>
               <p>Github, Visual Studio Code, NodeJS, Netlify, XAMPP</p>
@@ -593,11 +601,32 @@ const Details = styled.div`
       max-width: 976px;
       width: 81.5vw;
       margin-top: 80px;
-      margin-bottom: 150px;
+      margin-bottom: 170px;
       padding-top: 10px;
       padding-bottom: 20px;
 
       transition: 0.3s ease-in;
+    }
+  }
+
+  @media (max-width: 499px) {
+    p {
+      width: 80%;
+      font-size: smaller;
+    }
+
+    img {
+      max-width: 30px;
+      max-height: 30px;
+    }
+
+    .longer-icon {
+      max-width: 60px;
+    }
+
+    .profile {
+      max-width: 150px;
+      max-height: 150px;
     }
   }
 `;

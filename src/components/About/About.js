@@ -628,6 +628,14 @@ const Details = styled.div`
       max-width: 150px;
       max-height: 150px;
     }
+
+    .active,
+    .hidden {
+      margin-top: 80px;
+      margin-bottom: 120px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
   }
 `;
 

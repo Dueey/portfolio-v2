@@ -70,10 +70,10 @@ function Projects() {
 
   return (
     <Container>
-      <ImgSlider />
+      <ImgSlider className='img-slider' />
       <Wrapper>
         <Details>
-          <div className={hidden5}>
+          <div className={hidden5} id='projects'>
             <h1>Projects</h1>
           </div>
           <div className={hidden}>
@@ -240,6 +240,10 @@ const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   background-color: #18181b;
+
+  /* @media (max-width: 768px) {
+    display: none;
+  } */
 `;
 
 const Wrapper = styled.div`
@@ -369,6 +373,9 @@ const Details = styled.div`
   }
 
   @media (max-width: 768px) {
+    #projects {
+      display: none;
+    }
   }
 `;
 

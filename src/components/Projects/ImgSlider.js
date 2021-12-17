@@ -163,6 +163,10 @@ const Carousel = styled(Slider)`
   display: flex;
   justify-self: center;
   align-self: center;
+
+  @media (max-width: 768px) {
+    z-index: -1;
+  }
 `;
 
 const Wrap = styled.div`

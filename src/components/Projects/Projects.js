@@ -353,7 +353,7 @@ const Details = styled.div`
       display: flex;
       align-self: center;
       margin-top: 50px;
-      margin-left: 200px;
+      margin-left: 10vw;
       font-size: 250px;
       font-family: "Lobster", cursive;
       color: gray;
@@ -372,9 +372,46 @@ const Details = styled.div`
     overflow: hidden;
   }
 
+  @media (max-width: 2012px) and (min-width: 1151px) {
+    div {
+      max-width: 70vw;
+
+      h1 {
+        margin-left: 10vw;
+        font-size: 230px;
+      }
+    }
+  }
+
+  @media (max-width: 1150px) and (min-width: 820px) {
+    div {
+      max-width: 55vw;
+
+      h1 {
+        margin-left: 8vw;
+        font-size: 130px;
+      }
+    }
+  }
+
+  @media (max-width: 819px) and (min-width: 769px) {
+    div {
+      max-width: 55vw;
+
+      h1 {
+        margin-left: 5vw;
+        font-size: 130px;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     #projects {
       display: none;
+    }
+
+    div {
+      max-width: 20vw;
     }
   }
 `;

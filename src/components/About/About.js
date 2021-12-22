@@ -400,6 +400,7 @@ const Wrap = styled.div`
       max-width: 80vw;
       margin: 20px;
       margin-bottom: 820px;
+      color: #ed6a61;
     }
 
     .icon-1,

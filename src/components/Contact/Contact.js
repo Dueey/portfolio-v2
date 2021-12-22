@@ -29,9 +29,9 @@ function Contact() {
           <div className={hidden} onClick={handleClick}>
             <h1>Contact Me</h1>
           </div>
-          <div className={hidden2}>
+          <div className={hidden2} onClick={handleClick}>
             <div className='info'>
-              <ArrowBack className={arrow} onClick={handleClick} />
+              {/* <ArrowBack className={arrow} onClick={handleClick} /> */}
               <span>Email (Preferred Contact): 2103duykim@gmail.com</span>
               <span>Phone: (714) 944-0018</span>
               <span>
@@ -85,6 +85,7 @@ const Details = styled.div`
     justify-content: center;
     height: 0px;
     transition: 0.1s;
+    cursor: pointer;
 
     h1 {
       -webkit-user-select: none;
@@ -97,7 +98,6 @@ const Details = styled.div`
       font-size: 150px;
       font-family: "Lobster", cursive;
       color: gray;
-      cursor: pointer;
     }
 
     .info {
@@ -152,6 +152,51 @@ const Details = styled.div`
 
   .hidden {
     overflow: hidden;
+  }
+
+  @media (max-width: 850px) {
+    div {
+      max-width: 80vw;
+
+      h1 {
+        font-size: 100px;
+        margin-left: 10vw;
+      }
+
+      div {
+        margin-left: 5%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    div {
+      max-width: 80vw;
+
+      h1 {
+        font-size: 80px;
+        margin-left: 10vw;
+      }
+
+      div {
+        margin-left: 12%;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    div {
+      max-width: 80vw;
+
+      h1 {
+        font-size: 70px;
+        margin-left: 10vw;
+      }
+
+      div {
+        margin-left: 2%;
+      }
+    }
   }
 `;
 

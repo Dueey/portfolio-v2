@@ -395,11 +395,11 @@ const Wrap = styled.div`
 
     span {
       font-size: 50px;
-      height: 12vh;
+      height: 100px;
       width: 80vw;
       max-width: 80vw;
       margin: 20px;
-      margin-bottom: 820px;
+      margin-bottom: 860px;
       color: #ed6a61;
     }
 
@@ -509,7 +509,6 @@ const Details = styled.div`
       flex-direction: column;
       align-items: center;
       color: #e0e0e0;
-      /* margin-top: 280px; */
 
       h2 {
         margin-bottom: 10px;
@@ -579,6 +578,12 @@ const Details = styled.div`
   }
 
   @media (max-width: 1160px) {
+    #about-me {
+      h1 {
+        margin-left: 15vw;
+      }
+    }
+
     div {
       width: 90vw;
     }

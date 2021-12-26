@@ -77,6 +77,9 @@ function Projects() {
             <h1>Projects</h1>
           </div>
           <div className={hidden}>
+            <div>
+              <h1 className='title'>Clones</h1>
+            </div>
             <Card
               state={hidden}
               image1='/images/amazon-clone.jpg'
@@ -115,6 +118,9 @@ function Projects() {
             />
           </div>
           <div className={hidden2}>
+            <div>
+              <h1 className='title'>Games</h1>
+            </div>
             <Card
               state={hidden}
               image1='/images/tetris.jpg'
@@ -153,6 +159,9 @@ function Projects() {
             />
           </div>
           <div className={hidden3}>
+            <div>
+              <h1 className='title'>E-Commerce</h1>
+            </div>
             <Card
               state={hidden}
               image1='/images/amazon-clone.jpg'
@@ -173,6 +182,9 @@ function Projects() {
             />
           </div>
           <div className={hidden4}>
+            <div>
+              <h1 className='title'>Miscellaneous</h1>
+            </div>
             <Card
               state={hidden4}
               image1='/images/travel1.jpg'
@@ -241,9 +253,9 @@ const Container = styled.div`
   height: 100vh;
   background-color: #18181b;
 
-  /* @media (max-width: 768px) {
-    display: none;
-  } */
+  @media (max-width: 768px) {
+    height: 600vh;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -327,6 +339,13 @@ const Wrap = styled.div`
     margin-top: 4px;
     padding-right: 5px;
   }
+
+  @media (max-width: 768px) {
+    .active,
+    .hidden {
+      display: none;
+    }
+  }
 `;
 
 const Details = styled.div`
@@ -358,6 +377,12 @@ const Details = styled.div`
       font-family: "Lobster", cursive;
       color: gray;
     }
+
+    div {
+      .title {
+        display: none;
+      }
+    }
   }
 
   .active {
@@ -383,7 +408,7 @@ const Details = styled.div`
     }
   }
 
-  @media (max-width: 1150px) and (min-width: 820px) {
+  @media (max-width: 1150px) and (min-width: 850px) {
     div {
       max-width: 55vw;
 
@@ -394,7 +419,7 @@ const Details = styled.div`
     }
   }
 
-  @media (max-width: 819px) and (min-width: 769px) {
+  @media (max-width: 849px) and (min-width: 769px) {
     div {
       max-width: 55vw;
 
@@ -406,12 +431,52 @@ const Details = styled.div`
   }
 
   @media (max-width: 768px) {
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+
     #projects {
-      display: none;
+      height: 280px;
+
+      h1 {
+        font-size: 150px;
+      }
     }
 
     div {
-      max-width: 20vw;
+      max-width: 80vw;
+
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
+
+    .active,
+    .hidden {
+      max-width: 80vw;
+      width: 80vw;
+      max-height: 1000px;
+      height: 1000px;
+      border: 1px solid #30e389;
+      background-color: #29292c;
+      margin-bottom: 30px;
+      transition: 0.3s ease-in;
+    }
+  }
+
+  @media (max-width: 500px) {
+    #projects {
+      height: 230px;
+
+      h1 {
+        font-size: 100px;
+      }
     }
   }
 `;

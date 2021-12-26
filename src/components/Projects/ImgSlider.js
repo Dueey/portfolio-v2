@@ -166,6 +166,7 @@ const Carousel = styled(Slider)`
 
   @media (max-width: 768px) {
     z-index: -1;
+    max-width: 600px;
   }
 `;
 

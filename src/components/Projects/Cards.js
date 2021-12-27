@@ -8,7 +8,7 @@ function Cards(props) {
         <img className={props.class1} src={props.image1} alt='' />
         <span>{props.class1}</span>
       </Wrap>
-      <Wrap
+      {/* <Wrap
         href={props.link2}
         target='_blank'
         rel='noopener noreferrer'
@@ -16,18 +16,42 @@ function Cards(props) {
       >
         <img className={props.class2} src={props.image2} alt='' />
         <span>{props.class2}</span>
-      </Wrap>
+      </Wrap> */}
     </Container>
   );
 }
 
 const Container = styled.div`
+  display: flex;
   margin-top: 30px;
-  margin-left: 60px;
-  margin-right: 250px;
+  margin-bottom: -500px;
+  margin-left: 90px;
+  margin-right: 170px;
 
   .na {
     display: none;
+  }
+
+  @media (max-width: 1100px) {
+    margin-top: 30px;
+    margin-bottom: -600px;
+    margin-left: 40px;
+  }
+
+  @media (max-width: 849px) {
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+    margin-left: 80px;
+  }
+
+  @media (max-width: 700px) {
+    margin-top: -30px;
+    margin-left: 120px;
+    transform: scale(0.7);
   }
 `;
 

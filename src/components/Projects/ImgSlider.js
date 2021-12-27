@@ -158,15 +158,24 @@ function ImgSlider() {
 const Carousel = styled(Slider)`
   margin: 10px;
   margin-bottom: -40px;
-  max-width: 800px;
+  max-width: 700px;
   z-index: 1;
   display: flex;
   justify-self: center;
   align-self: center;
 
+  @media (max-width: 850px) {
+    width: 650px;
+  }
+
   @media (max-width: 768px) {
     z-index: -1;
-    max-width: 600px;
+    max-width: 300px;
+  }
+
+  @media (max-width: 500px) {
+    z-index: -1;
+    max-width: 200px;
   }
 `;
 

@@ -77,149 +77,125 @@ function Projects() {
             <h1>Projects</h1>
           </div>
           <div className={hidden}>
-            <div>
+            {/* <div>
               <h1 className='title'>Clones</h1>
-            </div>
+            </div> */}
             <Card
               state={hidden}
               image1='/images/amazon-clone.jpg'
               class1='Amazon'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://react--clone-8f180.web.app/'
             />
             <Card
               state={hidden}
               image1='/images/disney+.jpg'
               class1='Disney'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://react-disney-clone-d5025.web.app/'
             />
             <Card
               state={hidden}
               image1='/images/netflix-clone.jpg'
               class1='Netflix'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://react-netflix-clone-e098d.web.app/'
             />
             <Card
               state={hidden}
               image1='/images/yelp-clone.jpg'
               class1='Yelp-WIP'
-              image2=''
-              class2=''
-              class3='na'
               link1=''
             />
           </div>
           <div className={hidden2}>
-            <div>
+            {/* <div>
               <h1 className='title'>Games</h1>
-            </div>
+            </div> */}
             <Card
               state={hidden}
               image1='/images/tetris.jpg'
               class1='Tetris'
-              image2='/images/speedtyping.jpg'
-              class2='Speed-Typing'
               link1='https://tetris-react-javascript.netlify.app/'
-              link2='https://speed-typing-javascript.netlify.app/'
             />
             <Card
               state={hidden}
               image1='/images/pacman.jpg'
               class1='Pacman'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://pacman-javascript.netlify.app/'
             />
             <Card
               state={hidden}
               image1='/images/chess1.jpg'
               class1='Chess'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://chess-react-javascript.netlify.app/'
             />
             <Card
               state={hidden}
               image1='/images/tic_tac_toe.jpg'
               class1='Tic-Tac-Toe'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://tic-tac-toe-javascript-basic.netlify.app/'
+            />
+            <Card
+              state={hidden}
+              image1='/images/speedtyping.jpg'
+              class1='Speed-Typing'
+              link1='https://speed-typing-javascript.netlify.app/'
             />
           </div>
           <div className={hidden3}>
-            <div>
+            {/* <div>
               <h1 className='title'>E-Commerce</h1>
-            </div>
+            </div> */}
             <Card
               state={hidden}
               image1='/images/amazon-clone.jpg'
               class1='Amazon'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://react--clone-8f180.web.app/'
             />
             <Card
               state={hidden3}
               image1='/images/store.jpg'
               class1='E-Commerce'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://e-commerce-react-javascript.netlify.app/'
             />
           </div>
           <div className={hidden4}>
-            <div>
+            {/* <div>
               <h1 className='title'>Miscellaneous</h1>
-            </div>
+            </div> */}
             <Card
               state={hidden4}
               image1='/images/travel1.jpg'
               class1='Travel'
-              image2='/images/calculator.jpg'
-              class2='Calculator'
               link1='https://travel-website-react-javascript.netlify.app/'
-              link2='https://calculator-javascript-basic.netlify.app/'
             />
             <Card
               state={hidden4}
               image1='/images/discord-bot.jpg'
               class1='Discord-Music-Bot'
-              image2='/images/task-tracker.jpg'
-              class2='Task-Tracker'
               link1='https://discord.com/oauth2/authorize?client_id=827787615948242985&scope=bot&permissions=0'
-              link2='https://task-tracker-react-javascript.netlify.app/'
             />
             <Card
               state={hidden4}
               image1='/images/chat.jpg'
               class1='Chat-App'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://sleepy-raman-c33727.netlify.app/'
             />
             <Card
               state={hidden4}
               image1='/images/python-music.jpg'
               class1='Python-Music'
-              image2=''
-              class2=''
-              class3='na'
               link1='https://react-disney-clone-d5025.web.app/'
+            />
+            <Card
+              state={hidden4}
+              image1='/images/calculator.jpg'
+              class1='Calculator'
+              link1='https://calculator-javascript-basic.netlify.app/'
+            />
+            <Card
+              state={hidden4}
+              image1='/images/task-tracker.jpg'
+              class1='Task-Tracker'
+              link1='https://task-tracker-react-javascript.netlify.app/'
             />
           </div>
         </Details>
@@ -250,8 +226,12 @@ function Projects() {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 150vh;
   background-color: #18181b;
+
+  @media (max-width: 900px) and (min-width: 769px) {
+    height: 300vh;
+  }
 
   @media (max-width: 768px) {
     height: 600vh;
@@ -354,7 +334,6 @@ const Details = styled.div`
   position: absolute;
   display: flex;
   justify-content: center;
-  overflow: hidden;
 
   div {
     display: flex;
@@ -397,20 +376,22 @@ const Details = styled.div`
     overflow: hidden;
   }
 
-  @media (max-width: 2012px) and (min-width: 1151px) {
+  @media (max-width: 2012px) and (min-width: 1101px) {
     div {
-      max-width: 70vw;
+      max-width: 75vw;
+      height: 700px;
 
       h1 {
-        margin-left: 10vw;
-        font-size: 230px;
+        margin-left: 9vw;
+        font-size: 170px;
       }
     }
   }
 
-  @media (max-width: 1150px) and (min-width: 850px) {
+  @media (max-width: 1100px) and (min-width: 850px) {
     div {
       max-width: 55vw;
+      height: 800px;
 
       h1 {
         margin-left: 8vw;
@@ -422,10 +403,11 @@ const Details = styled.div`
   @media (max-width: 849px) and (min-width: 769px) {
     div {
       max-width: 55vw;
+      height: 800px;
 
       h1 {
         margin-left: 5vw;
-        font-size: 130px;
+        font-size: 120px;
       }
     }
   }
@@ -439,20 +421,39 @@ const Details = styled.div`
       height: 280px;
 
       h1 {
-        font-size: 150px;
+        margin-left: 12vw;
+        font-size: 100px;
       }
     }
 
     div {
       max-width: 80vw;
+      height: 400px;
 
-      .title {
+      div {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-right: 150px;
+        margin-bottom: -500px;
+        flex-direction: column;
+        overflow-wrap: break-word;
+
+        .title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 100px;
+        }
+      }
+    }
+
+    @media (max-width: 500px) {
+      div {
+        max-width: 55vw;
+        height: 300px;
 
         h1 {
-          font-size: 50px;
+          margin-left: 8vw;
+          font-size: 130px;
         }
       }
     }

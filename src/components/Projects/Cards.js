@@ -53,6 +53,19 @@ const Container = styled.div`
     margin-left: 120px;
     transform: scale(0.7);
   }
+
+  @media (max-width: 425px) {
+    margin-top: -50px;
+    margin-left: 95px;
+  }
+
+  @media (max-width: 375px) {
+    margin-left: 80px;
+  }
+
+  @media (max-width: 320px) {
+    margin-left: 60px;
+  }
 `;
 
 const Wrap = styled.a`

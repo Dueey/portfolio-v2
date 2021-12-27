@@ -76,10 +76,9 @@ function Projects() {
           <div className={hidden5} id='projects'>
             <h1>Projects</h1>
           </div>
+          <h1 className='title'>Clones</h1>
+
           <div className={hidden}>
-            {/* <div>
-              <h1 className='title'>Clones</h1>
-            </div> */}
             <Card
               state={hidden}
               image1='/images/amazon-clone.jpg'
@@ -105,10 +104,8 @@ function Projects() {
               link1=''
             />
           </div>
+          <h1 className='title'>Games</h1>
           <div className={hidden2}>
-            {/* <div>
-              <h1 className='title'>Games</h1>
-            </div> */}
             <Card
               state={hidden}
               image1='/images/tetris.jpg'
@@ -140,10 +137,8 @@ function Projects() {
               link1='https://speed-typing-javascript.netlify.app/'
             />
           </div>
+          <h1 className='title'>E-Commerce</h1>
           <div className={hidden3}>
-            {/* <div>
-              <h1 className='title'>E-Commerce</h1>
-            </div> */}
             <Card
               state={hidden}
               image1='/images/amazon-clone.jpg'
@@ -157,10 +152,8 @@ function Projects() {
               link1='https://e-commerce-react-javascript.netlify.app/'
             />
           </div>
+          <h1 className='title'>Miscellaneous</h1>
           <div className={hidden4}>
-            {/* <div>
-              <h1 className='title'>Miscellaneous</h1>
-            </div> */}
             <Card
               state={hidden4}
               image1='/images/travel1.jpg'
@@ -234,6 +227,10 @@ const Container = styled.div`
   }
 
   @media (max-width: 768px) {
+    height: 600vh;
+  }
+
+  @media (max-width: 425px) {
     height: 600vh;
   }
 `;
@@ -335,6 +332,10 @@ const Details = styled.div`
   display: flex;
   justify-content: center;
 
+  .title {
+    display: none;
+  }
+
   div {
     display: flex;
     flex-wrap: wrap;
@@ -355,12 +356,6 @@ const Details = styled.div`
       font-size: 250px;
       font-family: "Lobster", cursive;
       color: gray;
-    }
-
-    div {
-      .title {
-        display: none;
-      }
     }
   }
 
@@ -416,12 +411,20 @@ const Details = styled.div`
     margin-left: 8vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      display: flex;
+      font-size: 40px;
+      color: #30e389;
+    }
 
     #projects {
       height: 280px;
 
       h1 {
-        margin-left: 12vw;
+        margin-left: 19vw;
         font-size: 100px;
       }
     }
@@ -446,18 +449,6 @@ const Details = styled.div`
       }
     }
 
-    @media (max-width: 500px) {
-      div {
-        max-width: 55vw;
-        height: 300px;
-
-        h1 {
-          margin-left: 8vw;
-          font-size: 130px;
-        }
-      }
-    }
-
     .active,
     .hidden {
       max-width: 80vw;
@@ -471,12 +462,35 @@ const Details = styled.div`
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 425px) {
     #projects {
       height: 230px;
 
       h1 {
-        font-size: 100px;
+        font-size: 80px;
+        margin-left: 9vw;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    #projects {
+      height: 200px;
+
+      h1 {
+        font-size: 70px;
+        margin-left: 8vw;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    #projects {
+      height: 200px;
+
+      h1 {
+        font-size: 60px;
+        margin-left: 8vw;
       }
     }
   }

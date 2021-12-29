@@ -102,6 +102,7 @@ function About() {
           <div className={hidden5} id='about-me'>
             <h1>About Me</h1>
           </div>
+          <h1 className='title'>Coding</h1>
           <div className={hidden}>
             <div>
               <h2>Coding</h2>
@@ -123,6 +124,7 @@ function About() {
               <img className='profile' src='images/Duy.png' alt='' />
             </div>
           </div>
+          <h1 className='title'>Academics</h1>
           <div className={hidden2}>
             <div className='column'>
               <div>
@@ -159,6 +161,7 @@ function About() {
               </div>
             </div>
           </div>
+          <h1 className='title'>Skills</h1>
           <div className={hidden3}>
             <div>
               <h2>Languages</h2>
@@ -207,6 +210,7 @@ function About() {
               </div>
             </div>
           </div>
+          <h1 className='title'>Hobbies</h1>
           <div className={hidden4} id='hobbies'>
             <div>
               <h2>Powerlifting</h2>
@@ -269,6 +273,7 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     height: 500vh;
+    display: flex;
   }
 
   img {
@@ -381,33 +386,12 @@ const Wrap = styled.div`
     span {
       margin-right: 1vw;
     }
-
-    /* .icon-1,
-    .icon-2,
-    .icon-3,
-    .icon-4 {
-      display: none;
-    } */
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
-
-    span {
-      font-size: 50px;
-      height: 100px;
-      width: 80vw;
-      max-width: 80vw;
-      margin: 20px;
-      margin-bottom: 860px;
-      color: #ed6a61;
-    }
-
-    .icon-1,
-    .icon-2,
-    .icon-3,
-    .icon-4 {
-      font-size: 50px;
+    .active,
+    .hidden {
+      display: none;
     }
   }
 `;
@@ -473,6 +457,10 @@ const Details = styled.div`
     }
 
     @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       .column {
         display: flex;
         flex-direction: column;
@@ -590,12 +578,22 @@ const Details = styled.div`
   }
 
   @media (max-width: 768px) {
-    #about-me {
-      display: none;
-    }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     #hobbies {
       font-size: smaller;
+    }
+
+    #about-me {
+      height: 30vw;
+
+      h1 {
+        font-size: 80px;
+        margin-left: 0vw;
+      }
     }
 
     .active,
@@ -603,15 +601,21 @@ const Details = styled.div`
       overflow: visible;
       border: 1px solid #ed6a61;
       background-color: #29292c;
-      height: 700px;
+      height: 750px;
       max-width: 976px;
       width: 81.5vw;
-      margin-top: 80px;
-      margin-bottom: 170px;
       padding-top: 10px;
       padding-bottom: 20px;
+      margin-bottom: 30px;
 
       transition: 0.3s ease-in;
+    }
+
+    .title {
+      display: flex;
+      font-size: 40px;
+      color: #ed6a61;
+      margin-bottom: -50px;
     }
   }
 

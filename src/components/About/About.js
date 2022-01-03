@@ -565,6 +565,10 @@ const Details = styled.div`
     overflow: hidden;
   }
 
+  .title {
+    display: none;
+  }
+
   @media (max-width: 1160px) {
     #about-me {
       h1 {
